@@ -24,7 +24,7 @@ export const Hero = () => {
     <section className="relative flex min-h-screen w-full flex-col overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,#1f2a55_0%,#050816_42%,#010103_100%)]" />
 
-      <div className="c-space relative z-20 mx-auto mt-20 flex w-full max-w-7xl flex-col gap-4 sm:mt-36">
+      <div className="c-space relative z-20 mx-auto mt-20 flex w-full max-w-[1400px] flex-col gap-4 sm:mt-36">
         <p className="text-center font-generalsans text-xl font-medium text-white sm:text-3xl">
           Đinh Tiến Cường
         </p>
@@ -66,7 +66,7 @@ export const Hero = () => {
         </Canvas>
       </div>
 
-      <div className="c-space absolute bottom-7 left-0 right-0 z-30 mx-auto w-full max-w-7xl">
+      <div className="c-space absolute bottom-7 left-0 right-0 z-30 mx-auto w-full max-w-[1400px]">
         <Button
           isBeam
           containerClass="sm:w-fit w-full sm:min-w-96"

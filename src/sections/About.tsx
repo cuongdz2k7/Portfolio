@@ -19,7 +19,7 @@ export const About = () => {
   };
 
   return (
-    <section className="c-space mx-auto my-20 max-w-7xl" id="about">
+    <section className="c-space mx-auto my-20 max-w-[1400px]" id="about">
       <div className="grid h-full grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-6">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
