@@ -1,22 +1,24 @@
+﻿import { asset } from "../lib/assets";
+
 export const links = {
-  contactEmail: "[Điền email]",
+  contactEmail: "[Äiá»n email]",
   sourceCode: "#projects",
 };
 
 export const navLinks = [
   {
     id: 1,
-    name: "Trang chủ",
+    name: "Trang chá»§",
     href: "#",
   },
   {
     id: 2,
-    name: "Giới thiệu",
+    name: "Giá»›i thiá»‡u",
     href: "#about",
   },
   {
     id: 3,
-    name: "Dự án",
+    name: "Dá»± Ã¡n",
     href: "#projects",
   },
   {
@@ -26,7 +28,7 @@ export const navLinks = [
   },
   {
     id: 5,
-    name: "Tổng kết",
+    name: "Tá»•ng káº¿t",
     href: "#reflection",
   },
 ] as const;
@@ -34,172 +36,172 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: "Tư duy tổ chức",
-    position: "Quản lý dữ liệu cá nhân",
-    img: "/assets/review1.png",
+    name: "TÆ° duy tá»• chá»©c",
+    position: "Quáº£n lÃ½ dá»¯ liá»‡u cÃ¡ nhÃ¢n",
+    img: asset("/assets/review1.png"),
     review:
-      "Tôi biết cách sắp xếp tệp tin, đặt tên tài liệu, tổ chức thư mục học tập và lưu trữ minh chứng theo cấu trúc rõ ràng.",
+      "TÃ´i biáº¿t cÃ¡ch sáº¯p xáº¿p tá»‡p tin, Ä‘áº·t tÃªn tÃ i liá»‡u, tá»• chá»©c thÆ° má»¥c há»c táº­p vÃ  lÆ°u trá»¯ minh chá»©ng theo cáº¥u trÃºc rÃµ rÃ ng.",
   },
   {
     id: 2,
-    name: "Khai thác thông tin",
-    position: "Tìm kiếm và đánh giá nguồn",
-    img: "/assets/review2.png",
+    name: "Khai thÃ¡c thÃ´ng tin",
+    position: "TÃ¬m kiáº¿m vÃ  Ä‘Ã¡nh giÃ¡ nguá»“n",
+    img: asset("/assets/review2.png"),
     review:
-      "Tôi rèn luyện được cách chọn từ khóa, tìm nguồn học thuật, kiểm tra độ tin cậy và sử dụng thông tin có trách nhiệm.",
+      "TÃ´i rÃ¨n luyá»‡n Ä‘Æ°á»£c cÃ¡ch chá»n tá»« khÃ³a, tÃ¬m nguá»“n há»c thuáº­t, kiá»ƒm tra Ä‘á»™ tin cáº­y vÃ  sá»­ dá»¥ng thÃ´ng tin cÃ³ trÃ¡ch nhiá»‡m.",
   },
   {
     id: 3,
-    name: "Ứng dụng AI",
-    position: "Prompt và sáng tạo nội dung",
-    img: "/assets/review3.png",
+    name: "á»¨ng dá»¥ng AI",
+    position: "Prompt vÃ  sÃ¡ng táº¡o ná»™i dung",
+    img: asset("/assets/review3.png"),
     review:
-      "Tôi học được cách viết prompt rõ mục tiêu, kiểm tra phản hồi AI, chỉnh sửa sản phẩm và không phụ thuộc máy móc vào công cụ.",
+      "TÃ´i há»c Ä‘Æ°á»£c cÃ¡ch viáº¿t prompt rÃµ má»¥c tiÃªu, kiá»ƒm tra pháº£n há»“i AI, chá»‰nh sá»­a sáº£n pháº©m vÃ  khÃ´ng phá»¥ thuá»™c mÃ¡y mÃ³c vÃ o cÃ´ng cá»¥.",
   },
   {
     id: 4,
-    name: "Liêm chính học thuật",
-    position: "An toàn và trách nhiệm số",
-    img: "/assets/review4.png",
+    name: "LiÃªm chÃ­nh há»c thuáº­t",
+    position: "An toÃ n vÃ  trÃ¡ch nhiá»‡m sá»‘",
+    img: asset("/assets/review4.png"),
     review:
-      "Tôi nhận thức rõ hơn về bảo mật tài khoản, đạo văn, trích dẫn nguồn và nguyên tắc sử dụng AI minh bạch trong học tập.",
+      "TÃ´i nháº­n thá»©c rÃµ hÆ¡n vá» báº£o máº­t tÃ i khoáº£n, Ä‘áº¡o vÄƒn, trÃ­ch dáº«n nguá»“n vÃ  nguyÃªn táº¯c sá»­ dá»¥ng AI minh báº¡ch trong há»c táº­p.",
   },
 ] as const;
 
 const portfolioTags = [
   {
     id: 1,
-    name: "Kỹ năng số",
-    path: "/assets/react.svg",
+    name: "Ká»¹ nÄƒng sá»‘",
+    path: asset("/assets/react.svg"),
   },
   {
     id: 2,
     name: "AI",
-    path: "/assets/typescript.png",
+    path: asset("/assets/typescript.png"),
   },
   {
     id: 3,
-    name: "Học tập",
-    path: "/assets/tailwindcss.png",
+    name: "Há»c táº­p",
+    path: asset("/assets/tailwindcss.png"),
   },
   {
     id: 4,
-    name: "Minh chứng",
-    path: "/assets/framer.png",
+    name: "Minh chá»©ng",
+    path: asset("/assets/framer.png"),
   },
 ] as const;
 
 export const myProjects = [
   {
-    title: "Bài 1: Tệp tin và thư mục",
-    desc: "Thiết lập cấu trúc thư mục học tập rõ ràng, quy tắc đặt tên tệp nhất quán và cách lưu trữ minh chứng khoa học.",
+    title: "BÃ i 1: Tá»‡p tin vÃ  thÆ° má»¥c",
+    desc: "Thiáº¿t láº­p cáº¥u trÃºc thÆ° má»¥c há»c táº­p rÃµ rÃ ng, quy táº¯c Ä‘áº·t tÃªn tá»‡p nháº¥t quÃ¡n vÃ  cÃ¡ch lÆ°u trá»¯ minh chá»©ng khoa há»c.",
     subdesc:
-      "Mục tiêu là hình thành thói quen quản lý dữ liệu cá nhân, giảm thất lạc tài liệu và giúp việc nộp bài, tra cứu, cập nhật sản phẩm học tập trở nên chủ động hơn.",
+      "Má»¥c tiÃªu lÃ  hÃ¬nh thÃ nh thÃ³i quen quáº£n lÃ½ dá»¯ liá»‡u cÃ¡ nhÃ¢n, giáº£m tháº¥t láº¡c tÃ i liá»‡u vÃ  giÃºp viá»‡c ná»™p bÃ i, tra cá»©u, cáº­p nháº­t sáº£n pháº©m há»c táº­p trá»Ÿ nÃªn chá»§ Ä‘á»™ng hÆ¡n.",
     href: "#projects",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+    texture: asset("/textures/project/project1.mp4"),
+    logo: asset("/assets/project-logo1.png"),
     logoStyle: {
       backgroundColor: "#19312b",
       border: "0.2px solid #2f6f5d",
       boxShadow: "0px 0px 60px 0px #35D3A84D",
     },
-    spotlight: "/assets/spotlight1.png",
+    spotlight: asset("/assets/spotlight1.png"),
     tags: portfolioTags,
   },
   {
-    title: "Bài 2: Tìm kiếm học thuật",
-    desc: "Trình bày quá trình xác định chủ đề, chọn từ khóa, tìm tài liệu và đánh giá độ tin cậy của nguồn thông tin học thuật.",
+    title: "BÃ i 2: TÃ¬m kiáº¿m há»c thuáº­t",
+    desc: "TrÃ¬nh bÃ y quÃ¡ trÃ¬nh xÃ¡c Ä‘á»‹nh chá»§ Ä‘á», chá»n tá»« khÃ³a, tÃ¬m tÃ i liá»‡u vÃ  Ä‘Ã¡nh giÃ¡ Ä‘á»™ tin cáº­y cá»§a nguá»“n thÃ´ng tin há»c thuáº­t.",
     subdesc:
-      "Sản phẩm tập trung vào khả năng phân biệt dữ liệu, thông tin, tri thức và sử dụng nguồn tài liệu đúng cách trong môi trường số.",
+      "Sáº£n pháº©m táº­p trung vÃ o kháº£ nÄƒng phÃ¢n biá»‡t dá»¯ liá»‡u, thÃ´ng tin, tri thá»©c vÃ  sá»­ dá»¥ng nguá»“n tÃ i liá»‡u Ä‘Ãºng cÃ¡ch trong mÃ´i trÆ°á»ng sá»‘.",
     href: "#projects",
-    texture: "/textures/project/project2.mp4",
-    logo: "/assets/project-logo2.png",
+    texture: asset("/textures/project/project2.mp4"),
+    logo: asset("/assets/project-logo2.png"),
     logoStyle: {
       backgroundColor: "#18233a",
       border: "0.2px solid #2f4c8a",
       boxShadow: "0px 0px 60px 0px #5C8CFF4D",
     },
-    spotlight: "/assets/spotlight2.png",
+    spotlight: asset("/assets/spotlight2.png"),
     tags: portfolioTags,
   },
   {
-    title: "Bài 3: Viết prompt hiệu quả",
-    desc: "So sánh prompt ban đầu và prompt cải tiến để thấy cách ngữ cảnh, định dạng đầu ra và tiêu chí đánh giá ảnh hưởng đến kết quả AI.",
+    title: "BÃ i 3: Viáº¿t prompt hiá»‡u quáº£",
+    desc: "So sÃ¡nh prompt ban Ä‘áº§u vÃ  prompt cáº£i tiáº¿n Ä‘á»ƒ tháº¥y cÃ¡ch ngá»¯ cáº£nh, Ä‘á»‹nh dáº¡ng Ä‘áº§u ra vÃ  tiÃªu chÃ­ Ä‘Ã¡nh giÃ¡ áº£nh hÆ°á»Ÿng Ä‘áº¿n káº¿t quáº£ AI.",
     subdesc:
-      "Bài tập giúp tôi sử dụng AI như một trợ lý học tập có kiểm soát, biết đặt câu hỏi cụ thể và kiểm tra lại phản hồi thay vì sao chép thụ động.",
+      "BÃ i táº­p giÃºp tÃ´i sá»­ dá»¥ng AI nhÆ° má»™t trá»£ lÃ½ há»c táº­p cÃ³ kiá»ƒm soÃ¡t, biáº¿t Ä‘áº·t cÃ¢u há»i cá»¥ thá»ƒ vÃ  kiá»ƒm tra láº¡i pháº£n há»“i thay vÃ¬ sao chÃ©p thá»¥ Ä‘á»™ng.",
     href: "#projects",
-    texture: "/textures/project/project3.mp4",
-    logo: "/assets/project-logo3.png",
+    texture: asset("/textures/project/project3.mp4"),
+    logo: asset("/assets/project-logo3.png"),
     logoStyle: {
       backgroundColor: "#1f3a2d",
       border: "0.2px solid #3c8f68",
       boxShadow: "0px 0px 60px 0px #60F5A150",
     },
-    spotlight: "/assets/spotlight3.png",
+    spotlight: asset("/assets/spotlight3.png"),
     tags: portfolioTags,
   },
   {
-    title: "Bài 4: Hợp tác trực tuyến",
-    desc: "Minh chứng việc dùng công cụ quản lý dự án và giao tiếp trực tuyến để phân công, theo dõi tiến độ và phối hợp nhóm.",
+    title: "BÃ i 4: Há»£p tÃ¡c trá»±c tuyáº¿n",
+    desc: "Minh chá»©ng viá»‡c dÃ¹ng cÃ´ng cá»¥ quáº£n lÃ½ dá»± Ã¡n vÃ  giao tiáº¿p trá»±c tuyáº¿n Ä‘á»ƒ phÃ¢n cÃ´ng, theo dÃµi tiáº¿n Ä‘á»™ vÃ  phá»‘i há»£p nhÃ³m.",
     subdesc:
-      "Từ hoạt động này, tôi hiểu rõ hơn vai trò của lịch làm việc, phản hồi đúng thời điểm và trách nhiệm cá nhân khi làm việc trong môi trường số.",
+      "Tá»« hoáº¡t Ä‘á»™ng nÃ y, tÃ´i hiá»ƒu rÃµ hÆ¡n vai trÃ² cá»§a lá»‹ch lÃ m viá»‡c, pháº£n há»“i Ä‘Ãºng thá»i Ä‘iá»ƒm vÃ  trÃ¡ch nhiá»‡m cÃ¡ nhÃ¢n khi lÃ m viá»‡c trong mÃ´i trÆ°á»ng sá»‘.",
     href: "#projects",
-    texture: "/textures/project/project4.mp4",
-    logo: "/assets/project-logo4.png",
+    texture: asset("/textures/project/project4.mp4"),
+    logo: asset("/assets/project-logo4.png"),
     logoStyle: {
       backgroundColor: "#132532",
       border: "0.2px solid #1c5870",
       boxShadow: "0px 0px 60px 0px #35B9D34D",
     },
-    spotlight: "/assets/spotlight4.png",
+    spotlight: asset("/assets/spotlight4.png"),
     tags: portfolioTags,
   },
   {
-    title: "Bài 5: AI tạo sinh",
-    desc: "Ứng dụng AI để hỗ trợ sáng tạo nội dung số như ý tưởng, dàn ý, slide, infographic, bài viết hoặc video ngắn.",
+    title: "BÃ i 5: AI táº¡o sinh",
+    desc: "á»¨ng dá»¥ng AI Ä‘á»ƒ há»— trá»£ sÃ¡ng táº¡o ná»™i dung sá»‘ nhÆ° Ã½ tÆ°á»Ÿng, dÃ n Ã½, slide, infographic, bÃ i viáº¿t hoáº·c video ngáº¯n.",
     subdesc:
-      "Sản phẩm nhấn mạnh vai trò biên tập của người học: dùng AI để tăng tốc phác thảo, sau đó kiểm tra, chỉnh sửa và hoàn thiện bằng tư duy cá nhân.",
+      "Sáº£n pháº©m nháº¥n máº¡nh vai trÃ² biÃªn táº­p cá»§a ngÆ°á»i há»c: dÃ¹ng AI Ä‘á»ƒ tÄƒng tá»‘c phÃ¡c tháº£o, sau Ä‘Ã³ kiá»ƒm tra, chá»‰nh sá»­a vÃ  hoÃ n thiá»‡n báº±ng tÆ° duy cÃ¡ nhÃ¢n.",
     href: "#projects",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5.png",
+    texture: asset("/textures/project/project5.mp4"),
+    logo: asset("/assets/project-logo5.png"),
     logoStyle: {
       backgroundColor: "#2b2144",
       border: "0.2px solid #5d4a91",
       boxShadow: "0px 0px 60px 0px #A68CFF4D",
     },
-    spotlight: "/assets/spotlight5.png",
+    spotlight: asset("/assets/spotlight5.png"),
     tags: portfolioTags,
   },
   {
-    title: "Bài 6: AI có trách nhiệm",
-    desc: "Phân tích nguyên tắc sử dụng AI an toàn, minh bạch, tránh đạo văn, bảo vệ dữ liệu cá nhân và kiểm chứng thông tin.",
+    title: "BÃ i 6: AI cÃ³ trÃ¡ch nhiá»‡m",
+    desc: "PhÃ¢n tÃ­ch nguyÃªn táº¯c sá»­ dá»¥ng AI an toÃ n, minh báº¡ch, trÃ¡nh Ä‘áº¡o vÄƒn, báº£o vá»‡ dá»¯ liá»‡u cÃ¡ nhÃ¢n vÃ  kiá»ƒm chá»©ng thÃ´ng tin.",
     subdesc:
-      "Bài tập giúp tôi xây dựng bộ nguyên tắc cá nhân khi dùng AI trong học tập và nghiên cứu, đặc biệt với trích dẫn nguồn và liêm chính học thuật.",
+      "BÃ i táº­p giÃºp tÃ´i xÃ¢y dá»±ng bá»™ nguyÃªn táº¯c cÃ¡ nhÃ¢n khi dÃ¹ng AI trong há»c táº­p vÃ  nghiÃªn cá»©u, Ä‘áº·c biá»‡t vá»›i trÃ­ch dáº«n nguá»“n vÃ  liÃªm chÃ­nh há»c thuáº­t.",
     href: "#projects",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+    texture: asset("/textures/project/project1.mp4"),
+    logo: asset("/assets/project-logo1.png"),
     logoStyle: {
       backgroundColor: "#3a2316",
       border: "0.2px solid #8f5730",
       boxShadow: "0px 0px 60px 0px #FF9D4D4D",
     },
-    spotlight: "/assets/spotlight1.png",
+    spotlight: asset("/assets/spotlight1.png"),
     tags: portfolioTags,
   },
   {
-    title: "Bài 7A: Trợ lý nghiên cứu AI",
-    desc: "Sử dụng AI để hỗ trợ đọc hiểu, tóm tắt, đặt câu hỏi và phân tích tài liệu thuộc khoa học tự nhiên, kỹ thuật hoặc công nghệ.",
+    title: "BÃ i 7A: Trá»£ lÃ½ nghiÃªn cá»©u AI",
+    desc: "Sá»­ dá»¥ng AI Ä‘á»ƒ há»— trá»£ Ä‘á»c hiá»ƒu, tÃ³m táº¯t, Ä‘áº·t cÃ¢u há»i vÃ  phÃ¢n tÃ­ch tÃ i liá»‡u thuá»™c khoa há»c tá»± nhiÃªn, ká»¹ thuáº­t hoáº·c cÃ´ng nghá»‡.",
     subdesc:
-      "Sản phẩm cho thấy cách dùng AI như trợ lý nghiên cứu, đồng thời vẫn đối chiếu với tài liệu gốc để tránh hiểu sai hoặc trích dẫn thiếu chính xác.",
+      "Sáº£n pháº©m cho tháº¥y cÃ¡ch dÃ¹ng AI nhÆ° trá»£ lÃ½ nghiÃªn cá»©u, Ä‘á»“ng thá»i váº«n Ä‘á»‘i chiáº¿u vá»›i tÃ i liá»‡u gá»‘c Ä‘á»ƒ trÃ¡nh hiá»ƒu sai hoáº·c trÃ­ch dáº«n thiáº¿u chÃ­nh xÃ¡c.",
     href: "#projects",
-    texture: "/textures/project/project2.mp4",
-    logo: "/assets/project-logo2.png",
+    texture: asset("/textures/project/project2.mp4"),
+    logo: asset("/assets/project-logo2.png"),
     logoStyle: {
       backgroundColor: "#183131",
       border: "0.2px solid #2c7878",
       boxShadow: "0px 0px 60px 0px #45D6C84D",
     },
-    spotlight: "/assets/spotlight2.png",
+    spotlight: asset("/assets/spotlight2.png"),
     tags: portfolioTags,
   },
 ] as const;
@@ -207,32 +209,32 @@ export const myProjects = [
 export const workExperiences = [
   {
     id: 1,
-    name: "Học vấn",
-    pos: "[Điền trường] - [Điền ngành/lớp]",
+    name: "Há»c váº¥n",
+    pos: "[Äiá»n trÆ°á»ng] - [Äiá»n ngÃ nh/lá»›p]",
     duration: "2026",
     title:
-      "Sinh viên đang xây dựng nền tảng kỹ năng số thông qua học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Mục tiêu là học tập có tổ chức, biết khai thác công cụ số và trình bày sản phẩm học tập chuyên nghiệp.",
-    icon: "/assets/notion.svg",
+      "Sinh viÃªn Ä‘ang xÃ¢y dá»±ng ná»n táº£ng ká»¹ nÄƒng sá»‘ thÃ´ng qua há»c pháº§n Nháº­p mÃ´n CÃ´ng nghá»‡ sá»‘ vÃ  á»¨ng dá»¥ng TrÃ­ tuá»‡ nhÃ¢n táº¡o. Má»¥c tiÃªu lÃ  há»c táº­p cÃ³ tá»• chá»©c, biáº¿t khai thÃ¡c cÃ´ng cá»¥ sá»‘ vÃ  trÃ¬nh bÃ y sáº£n pháº©m há»c táº­p chuyÃªn nghiá»‡p.",
+    icon: asset("/assets/notion.svg"),
     animation: "salute",
   },
   {
     id: 2,
-    name: "Kỹ năng số",
-    pos: "Quản lý dữ liệu - tìm kiếm - hợp tác",
-    duration: "Bài 1 - Bài 4",
+    name: "Ká»¹ nÄƒng sá»‘",
+    pos: "Quáº£n lÃ½ dá»¯ liá»‡u - tÃ¬m kiáº¿m - há»£p tÃ¡c",
+    duration: "BÃ i 1 - BÃ i 4",
     title:
-      "Biết quản lý tệp tin, tìm kiếm học thuật, đánh giá nguồn tin, lưu trữ trên Google Drive/OneDrive và phối hợp nhóm bằng công cụ trực tuyến như Trello hoặc nền tảng tương đương.",
-    icon: "/assets/figma.svg",
+      "Biáº¿t quáº£n lÃ½ tá»‡p tin, tÃ¬m kiáº¿m há»c thuáº­t, Ä‘Ã¡nh giÃ¡ nguá»“n tin, lÆ°u trá»¯ trÃªn Google Drive/OneDrive vÃ  phá»‘i há»£p nhÃ³m báº±ng cÃ´ng cá»¥ trá»±c tuyáº¿n nhÆ° Trello hoáº·c ná»n táº£ng tÆ°Æ¡ng Ä‘Æ°Æ¡ng.",
+    icon: asset("/assets/figma.svg"),
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Ứng dụng AI",
-    pos: "Prompt - sáng tạo nội dung - trách nhiệm",
-    duration: "Bài 3 - Bài 7A",
+    name: "á»¨ng dá»¥ng AI",
+    pos: "Prompt - sÃ¡ng táº¡o ná»™i dung - trÃ¡ch nhiá»‡m",
+    duration: "BÃ i 3 - BÃ i 7A",
     title:
-      "Biết viết prompt, dùng AI để hỗ trợ học tập và sáng tạo nội dung, kiểm chứng phản hồi, bảo vệ dữ liệu cá nhân, tránh đạo văn và ghi nhận nguồn hỗ trợ minh bạch.",
-    icon: "/assets/framer.svg",
+      "Biáº¿t viáº¿t prompt, dÃ¹ng AI Ä‘á»ƒ há»— trá»£ há»c táº­p vÃ  sÃ¡ng táº¡o ná»™i dung, kiá»ƒm chá»©ng pháº£n há»“i, báº£o vá»‡ dá»¯ liá»‡u cÃ¡ nhÃ¢n, trÃ¡nh Ä‘áº¡o vÄƒn vÃ  ghi nháº­n nguá»“n há»— trá»£ minh báº¡ch.",
+    icon: asset("/assets/framer.svg"),
     animation: "victory",
   },
 ] as const;
@@ -240,17 +242,18 @@ export const workExperiences = [
 export const socialLinks = [
   {
     name: "GitHub",
-    icon: "/assets/github.svg",
+    icon: asset("/assets/github.svg"),
     url: "#",
   },
   {
     name: "Email",
-    icon: "/assets/terminal.png",
-    url: "mailto:[Điền email]",
+    icon: asset("/assets/terminal.png"),
+    url: "mailto:[Äiá»n email]",
   },
   {
     name: "Portfolio",
-    icon: "/assets/arrow-up.png",
+    icon: asset("/assets/arrow-up.png"),
     url: "#",
   },
 ] as const;
+

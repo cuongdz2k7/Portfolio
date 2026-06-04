@@ -1,4 +1,5 @@
 import { clientReviews } from "../constants";
+import { asset } from "../lib/assets";
 
 export const Clients = () => {
   return (
@@ -33,7 +34,7 @@ export const Clients = () => {
                   {Array.from({ length: 5 }).map((_, i) => (
                     <img
                       key={`${name}-star-${i}`}
-                      src="/assets/star.png"
+                      src={asset("/assets/star.png")}
                       alt="Đánh giá"
                       className="size-5"
                     />

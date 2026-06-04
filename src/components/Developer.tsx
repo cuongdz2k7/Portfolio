@@ -8,6 +8,8 @@ import { useEffect, useMemo, useRef } from "react";
 import type * as THREE from "three";
 import type { GLTF } from "three-stdlib";
 
+import { asset } from "../lib/assets";
+
 type GLTFResult = GLTF & {
   nodes: {
     EyeLeft: THREE.SkinnedMesh;
@@ -46,18 +48,18 @@ export const Developer = ({
   const groupRef = useRef<THREE.Group>(null);
 
   const { nodes, materials } = useGLTF(
-    "/models/animations/developer.glb"
+    asset("/models/animations/developer.glb")
   ) as GLTFResult;
 
-  const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx");
+  const { animations: idleAnimation } = useFBX(asset("/models/animations/idle.fbx"));
   const { animations: saluteAnimation } = useFBX(
-    "/models/animations/salute.fbx"
+    asset("/models/animations/salute.fbx")
   );
   const { animations: clappingAnimation } = useFBX(
-    "/models/animations/clapping.fbx"
+    asset("/models/animations/clapping.fbx")
   );
   const { animations: victoryAnimation } = useFBX(
-    "/models/animations/victory.fbx"
+    asset("/models/animations/victory.fbx")
   );
 
   const idleClip = useMemo(() => {
@@ -166,4 +168,4 @@ export const Developer = ({
   );
 };
 
-useGLTF.preload("/models/animations/developer.glb");
+useGLTF.preload(asset("/models/animations/developer.glb"));

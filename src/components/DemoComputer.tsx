@@ -10,6 +10,8 @@ import { useMemo, useRef } from "react";
 import type * as THREE from "three";
 import type { GLTF } from "three-stdlib";
 
+import { asset } from "../lib/assets";
+
 type GLTFResult = GLTF & {
   nodes: {
     ["monitor-screen"]: THREE.Mesh;
@@ -43,7 +45,7 @@ export const DemoComputer = ({
   ...props
 }: GroupProps & DemoComputerProps) => {
   const group = useRef<THREE.Group>(null);
-  const { nodes, materials } = useGLTF("/models/computer.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF(asset("/models/computer.glb")) as GLTFResult;
 
   const txt = useVideoTexture(texture);
   const screenTexture = useMemo(() => {
@@ -1054,4 +1056,4 @@ export const DemoComputer = ({
   );
 };
 
-useGLTF.preload("/models/computer.glb");
+useGLTF.preload(asset("/models/computer.glb"));

@@ -3,6 +3,7 @@ import Globe from "react-globe.gl";
 
 import { Button } from "../components/Button";
 import { links } from "../constants";
+import { asset } from "../lib/assets";
 
 export const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -23,7 +24,7 @@ export const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/profile.jpg"
+              src={asset("/assets/profile.jpg")}
               alt="Ảnh cá nhân"
               className="h-fit w-full rounded-2xl object-cover object-top sm:h-[276px]"
             />
@@ -42,7 +43,7 @@ export const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid2.png"
+              src={asset("/assets/grid2.png")}
               alt="Kỹ năng số"
               className="h-fit w-full object-contain sm:w-[276px]"
             />
@@ -66,8 +67,8 @@ export const About = () => {
                 width={326}
                 backgroundColor="rgba(0, 0, 0, 0)"
                 showAtmosphere
-                globeImageUrl="/assets/earth-night.jpg"
-                bumpImageUrl="/assets/earth-topology.png"
+                globeImageUrl={asset("/assets/earth-night.jpg")}
+                bumpImageUrl={asset("/assets/earth-topology.png")}
                 labelsData={[
                   {
                     lat: 16.0471,
@@ -100,7 +101,7 @@ export const About = () => {
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid3.png"
+              src={asset("/assets/grid3.png")}
               alt="Mục tiêu portfolio"
               className="h-fit w-full object-contain sm:h-[266px]"
             />
@@ -119,7 +120,7 @@ export const About = () => {
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
-              src="/assets/grid4.png"
+              src={asset("/assets/grid4.png")}
               alt="Liên hệ"
               className="h-fit w-full object-cover sm:h-[276px] sm:object-top md:h-[126px]"
             />
@@ -130,7 +131,7 @@ export const About = () => {
               <div className="copy-container">
                 <Button onClick={handleCopy} containerClass="w-full">
                   <img
-                    src={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"}
+                    src={hasCopied ? asset("/assets/tick.svg") : asset("/assets/copy.svg")}
                     alt={hasCopied ? "Đã sao chép" : "Sao chép"}
                     className="size-5"
                   />

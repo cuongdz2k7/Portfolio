@@ -8,6 +8,8 @@ import type { GroupProps } from "@react-three/fiber";
 import type * as THREE from "three";
 import type { GLTF } from "three-stdlib";
 
+import { asset } from "../lib/assets";
+
 type GLTFResult = GLTF & {
   nodes: {
     screen_screens_0: THREE.Mesh;
@@ -44,10 +46,10 @@ type GLTFResult = GLTF & {
 };
 
 export const HackerRoom = (props: GroupProps) => {
-  const { nodes, materials } = useGLTF("/models/hacker-room.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF(asset("/models/hacker-room.glb")) as GLTFResult;
 
-  const monitorTxt = useTexture("/textures/desk/monitor.png");
-  const screenTxt = useTexture("/textures/desk/screen.png");
+  const monitorTxt = useTexture(asset("/textures/desk/monitor.png"));
+  const screenTxt = useTexture(asset("/textures/desk/screen.png"));
 
   return (
     <group {...props} dispose={null}>
@@ -117,4 +119,4 @@ export const HackerRoom = (props: GroupProps) => {
   );
 };
 
-useGLTF.preload("/models/hacker-room.glb");
+useGLTF.preload(asset("/models/hacker-room.glb"));

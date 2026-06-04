@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { navLinks } from "../constants";
+import { asset } from "../lib/assets";
 import { cn } from "../lib/utils";
 
 interface NavItemsProps {
@@ -42,7 +43,7 @@ export const Navbar = () => {
             aria-label="Toggle Menu"
           >
             <img
-              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
+              src={isOpen ? asset("/assets/close.svg") : asset("/assets/menu.svg")}
               alt="Toggle"
               className="size-6"
             />

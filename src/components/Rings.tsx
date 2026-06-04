@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { useCallback, useRef } from "react";
 import type * as THREE from "three";
 
+import { asset } from "../lib/assets";
+
 interface RingsProps {
   position: [number, number, number];
 }
@@ -16,7 +18,7 @@ export const Rings = ({ position }: RingsProps) => {
     }
   }, []);
 
-  const texture = useTexture("/textures/rings.png");
+  const texture = useTexture(asset("/textures/rings.png"));
 
   useGSAP(
     () => {

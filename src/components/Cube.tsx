@@ -10,6 +10,8 @@ import { useRef, useState } from "react";
 import type * as THREE from "three";
 import { GLTF } from "three-stdlib";
 
+import { asset } from "../lib/assets";
+
 type GLTFResult = GLTF & {
   nodes: {
     Cube: THREE.Mesh;
@@ -18,8 +20,8 @@ type GLTFResult = GLTF & {
 };
 
 export const Cube = (props: GroupProps) => {
-  const { nodes } = useGLTF("/models/cube.glb") as GLTFResult;
-  const texture = useTexture("/textures/cube.png");
+  const { nodes } = useGLTF(asset("/models/cube.glb")) as GLTFResult;
+  const texture = useTexture(asset("/textures/cube.png"));
 
   const cubeRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
@@ -66,4 +68,4 @@ export const Cube = (props: GroupProps) => {
   );
 };
 
-useGLTF.preload("/models/cube.glb");
+useGLTF.preload(asset("/models/cube.glb"));

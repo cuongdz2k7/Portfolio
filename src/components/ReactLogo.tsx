@@ -11,6 +11,8 @@ import type { GroupProps } from "@react-three/fiber";
 import type * as THREE from "three";
 import type { GLTF } from "three-stdlib";
 
+import { asset } from "../lib/assets";
+
 type GLTFResult = GLTF & {
   nodes: {
     ["React-Logo_Material002_0"]: THREE.Mesh;
@@ -21,7 +23,7 @@ type GLTFResult = GLTF & {
 };
 
 export const ReactLogo = (props: GroupProps) => {
-  const { nodes, materials } = useGLTF("/models/react.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF(asset("/models/react.glb")) as GLTFResult;
 
   return (
     <Float floatIntensity={1}>
@@ -38,4 +40,4 @@ export const ReactLogo = (props: GroupProps) => {
   );
 };
 
-useGLTF.preload("/models/react.glb");
+useGLTF.preload(asset("/models/react.glb"));

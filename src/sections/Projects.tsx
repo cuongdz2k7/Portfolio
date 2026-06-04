@@ -7,6 +7,7 @@ import { Suspense, useState } from "react";
 import { CanvasLoader } from "../components/CanvasLoader";
 import { DemoComputer } from "../components/DemoComputer";
 import { myProjects } from "../constants";
+import { asset } from "../lib/assets";
 
 export const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
@@ -91,7 +92,7 @@ export const Projects = () => {
             <a href={currentProject.href} className="flex items-center gap-2 text-white-600">
               <p>Minh chứng placeholder</p>
               <img
-                src="/assets/arrow-up.png"
+                src={asset("/assets/arrow-up.png")}
                 className="size-3"
                 alt="Mũi tên"
               />
@@ -105,7 +106,7 @@ export const Projects = () => {
               aria-label="Dự án trước"
             >
               <img
-                src="/assets/left-arrow.png"
+                src={asset("/assets/left-arrow.png")}
                 alt="Mũi tên trái"
                 className="size-4"
               />
@@ -121,7 +122,7 @@ export const Projects = () => {
               aria-label="Dự án tiếp theo"
             >
               <img
-                src="/assets/right-arrow.png"
+                src={asset("/assets/right-arrow.png")}
                 alt="Mũi tên phải"
                 className="size-4"
               />
