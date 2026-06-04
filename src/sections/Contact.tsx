@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 export const Contact = () => {
   return (
     <section className="c-space my-20" id="contact">
-      <div className="mx-auto w-full max-w-[1500px] rounded-3xl border border-white-500/10 bg-[#0c0c0e]/95 backdrop-blur-md overflow-hidden shadow-2xl relative flex flex-col">
+      <div className="mx-auto w-full max-w-6xl rounded-3xl border border-white-500/10 bg-[#0c0c0e]/95 backdrop-blur-md overflow-hidden shadow-2xl relative flex flex-col">
         {/* Background Terminal texture */}
         <img
           src={asset("/assets/terminal.png")}

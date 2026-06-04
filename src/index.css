@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 11px; /* 11px/16px = 68.75% scale, matching browser's 67% zoom beautifully */
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 12px; /* Slightly larger on smaller laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13.5px; /* Balanced scale on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14.5px; /* Maintain readable font sizing on mobile devices */
+  }
+}
+
 * {
   scroll-behavior: smooth;
 }

@@ -181,13 +181,13 @@ export const Projects = () => {
             </div>
           </article>
 
-          <aside className="mx-auto aspect-square w-full max-w-[520px] self-start overflow-hidden rounded-2xl border border-white-500/10 bg-black-200 xl:sticky xl:top-28">
+          <aside className="mx-auto aspect-square w-full max-w-[32.5rem] self-start overflow-hidden rounded-2xl border border-white-500/10 bg-black-200 xl:sticky xl:top-28">
             <Canvas>
               <ambientLight intensity={Math.PI} />
               <directionalLight position={[10, 10, 5]} />
 
               <Suspense fallback={<CanvasLoader />}>
-                <group scale={1.7} position={[0.02, -1.15, 0]} rotation={[0, -0.1, 0]}>
+                <group scale={1.45} position={[-0.1, -0.9, 0]} rotation={[0, -0.1, 0]}>
                   <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>
