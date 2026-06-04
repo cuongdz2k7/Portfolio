@@ -15,9 +15,9 @@ export const Contact = () => {
           <h3 className="head-text">Thông tin nộp bài</h3>
 
           <p className="mt-3 text-lg leading-8 text-white-600">
-            Portfolio này là sản phẩm tổng hợp cho bài tập dự án cá nhân. Bạn
-            có thể thay các placeholder bằng thông tin thật, thêm link minh
-            chứng và xuất bản website lên GitHub Pages, Netlify hoặc Vercel.
+            Portfolio này là sản phẩm tổng hợp cho bài tập dự án cá nhân. Bạn có
+            thể thay các placeholder bằng thông tin thật, thêm link minh chứng và
+            xuất bản website lên GitHub Pages, Netlify hoặc Vercel.
           </p>
 
           <div className="mt-10 grid gap-4 text-white-600">

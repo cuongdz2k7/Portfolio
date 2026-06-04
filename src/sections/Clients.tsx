@@ -3,20 +3,20 @@ import { asset } from "../lib/assets";
 
 export const Clients = () => {
   return (
-    <section className="c-space my-20" id="reflection">
+    <section className="c-space mx-auto my-20 max-w-7xl" id="reflection">
       <h3 className="head-text">Tổng kết quá trình học</h3>
 
-      <p className="mt-3 max-w-3xl text-white-600">
-        Sau học phần, tôi hiểu rằng năng lực số không chỉ là biết dùng công cụ,
-        mà còn là biết tổ chức thông tin, đánh giá nguồn, hợp tác trực tuyến và
-        ứng dụng AI một cách có trách nhiệm.
+      <p className="mt-3 max-w-4xl leading-8 text-white-600">
+        Sau học phần, tôi hiểu rằng năng lực số không chỉ là biết dùng công cụ, mà
+        còn là biết tổ chức thông tin, đánh giá nguồn, hợp tác trực tuyến và ứng
+        dụng AI một cách có trách nhiệm.
       </p>
 
       <div className="client-container">
         {clientReviews.map(({ id, name, review, img, position }) => (
           <div key={id} className="client-review">
             <div>
-              <p className="font-light text-white">{review}</p>
+              <p className="font-light leading-8 text-white">{review}</p>
 
               <div className="client-content">
                 <div className="flex gap-3">

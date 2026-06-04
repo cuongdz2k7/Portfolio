@@ -12,17 +12,16 @@ export const Experience = () => {
   >("idle");
 
   return (
-    <section className="c-space my-20" id="cv">
+    <section className="c-space mx-auto my-20 max-w-7xl" id="cv">
       <div className="w-full text-white-600">
         <h3 className="head-text">CV học tập</h3>
-        <p className="mt-3 max-w-3xl">
-          Tóm tắt học vấn, kỹ năng số và định hướng phát triển cá nhân. Các
-          thông tin riêng như trường, lớp, mã sinh viên, email đang để
-          placeholder để bạn cập nhật sau.
+        <p className="mt-3 max-w-4xl leading-8">
+          Tóm tắt học vấn, kỹ năng số và định hướng phát triển cá nhân. Các thông tin riêng
+          như trường, lớp, mã sinh viên, email đang để placeholder để bạn cập nhật sau.
         </p>
 
         <div className="work-container">
-          <div className="work-canvas">
+          <div className="work-canvas min-h-[520px]">
             <Canvas>
               <ambientLight intensity={7} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -60,13 +59,13 @@ export const Experience = () => {
                     </div>
 
                     <div className="px-2.5 py-5 sm:p-5">
-                      <p className="font-bold text-white-800">{name}</p>
+                      <p className="text-xl font-bold text-white-800">{name}</p>
 
-                      <p className="mb-5 text-sm">
+                      <p className="mb-5 text-sm text-white-600">
                         {pos} &bull; {duration}
                       </p>
 
-                      <div className="transition duration-500 ease-in-out group-hover:text-white">
+                      <div className="max-w-3xl leading-8 transition duration-500 ease-in-out group-hover:text-white">
                         {title}
                       </div>
                     </div>

@@ -9,7 +9,7 @@ import { Projects } from "./sections/Projects";
 
 function App() {
   return (
-    <main className="relative mx-auto max-w-7xl">
+    <main className="relative mx-auto w-full overflow-hidden">
       <Navbar />
 
       <Hero />

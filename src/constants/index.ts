@@ -1,24 +1,24 @@
-﻿import { asset } from "../lib/assets";
+import { asset } from "../lib/assets";
 
 export const links = {
-  contactEmail: "[Äiá»n email]",
+  contactEmail: "[Điền email]",
   sourceCode: "#projects",
 };
 
 export const navLinks = [
   {
     id: 1,
-    name: "Trang chá»§",
+    name: "Trang chủ",
     href: "#",
   },
   {
     id: 2,
-    name: "Giá»›i thiá»‡u",
+    name: "Giới thiệu",
     href: "#about",
   },
   {
     id: 3,
-    name: "Dá»± Ã¡n",
+    name: "Dự án",
     href: "#projects",
   },
   {
@@ -28,7 +28,7 @@ export const navLinks = [
   },
   {
     id: 5,
-    name: "Tá»•ng káº¿t",
+    name: "Tổng kết",
     href: "#reflection",
   },
 ] as const;
@@ -36,42 +36,42 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: "TÆ° duy tá»• chá»©c",
-    position: "Quáº£n lÃ½ dá»¯ liá»‡u cÃ¡ nhÃ¢n",
+    name: "Tư duy tổ chức",
+    position: "Quản lý dữ liệu cá nhân",
     img: asset("/assets/review1.png"),
     review:
-      "TÃ´i biáº¿t cÃ¡ch sáº¯p xáº¿p tá»‡p tin, Ä‘áº·t tÃªn tÃ i liá»‡u, tá»• chá»©c thÆ° má»¥c há»c táº­p vÃ  lÆ°u trá»¯ minh chá»©ng theo cáº¥u trÃºc rÃµ rÃ ng.",
+      "Tôi biết cách sắp xếp tệp tin, đặt tên tài liệu, tổ chức thư mục học tập và lưu trữ minh chứng theo cấu trúc rõ ràng.",
   },
   {
     id: 2,
-    name: "Khai thÃ¡c thÃ´ng tin",
-    position: "TÃ¬m kiáº¿m vÃ  Ä‘Ã¡nh giÃ¡ nguá»“n",
+    name: "Khai thác thông tin",
+    position: "Tìm kiếm và đánh giá nguồn",
     img: asset("/assets/review2.png"),
     review:
-      "TÃ´i rÃ¨n luyá»‡n Ä‘Æ°á»£c cÃ¡ch chá»n tá»« khÃ³a, tÃ¬m nguá»“n há»c thuáº­t, kiá»ƒm tra Ä‘á»™ tin cáº­y vÃ  sá»­ dá»¥ng thÃ´ng tin cÃ³ trÃ¡ch nhiá»‡m.",
+      "Tôi rèn luyện được cách chọn từ khóa, tìm nguồn học thuật, kiểm tra độ tin cậy và sử dụng thông tin có trách nhiệm.",
   },
   {
     id: 3,
-    name: "á»¨ng dá»¥ng AI",
-    position: "Prompt vÃ  sÃ¡ng táº¡o ná»™i dung",
+    name: "Ứng dụng AI",
+    position: "Prompt và sáng tạo nội dung",
     img: asset("/assets/review3.png"),
     review:
-      "TÃ´i há»c Ä‘Æ°á»£c cÃ¡ch viáº¿t prompt rÃµ má»¥c tiÃªu, kiá»ƒm tra pháº£n há»“i AI, chá»‰nh sá»­a sáº£n pháº©m vÃ  khÃ´ng phá»¥ thuá»™c mÃ¡y mÃ³c vÃ o cÃ´ng cá»¥.",
+      "Tôi học được cách viết prompt rõ mục tiêu, kiểm tra phản hồi AI, chỉnh sửa sản phẩm và không phụ thuộc máy móc vào công cụ.",
   },
   {
     id: 4,
-    name: "LiÃªm chÃ­nh há»c thuáº­t",
-    position: "An toÃ n vÃ  trÃ¡ch nhiá»‡m sá»‘",
+    name: "Liêm chính học thuật",
+    position: "An toàn và trách nhiệm số",
     img: asset("/assets/review4.png"),
     review:
-      "TÃ´i nháº­n thá»©c rÃµ hÆ¡n vá» báº£o máº­t tÃ i khoáº£n, Ä‘áº¡o vÄƒn, trÃ­ch dáº«n nguá»“n vÃ  nguyÃªn táº¯c sá»­ dá»¥ng AI minh báº¡ch trong há»c táº­p.",
+      "Tôi nhận thức rõ hơn về bảo mật tài khoản, đạo văn, trích dẫn nguồn và nguyên tắc sử dụng AI minh bạch trong học tập.",
   },
 ] as const;
 
 const portfolioTags = [
   {
     id: 1,
-    name: "Ká»¹ nÄƒng sá»‘",
+    name: "Kỹ năng số",
     path: asset("/assets/react.svg"),
   },
   {
@@ -81,22 +81,32 @@ const portfolioTags = [
   },
   {
     id: 3,
-    name: "Há»c táº­p",
+    name: "Học tập",
     path: asset("/assets/tailwindcss.png"),
   },
   {
     id: 4,
-    name: "Minh chá»©ng",
+    name: "Minh chứng",
     path: asset("/assets/framer.png"),
   },
 ] as const;
 
 export const myProjects = [
   {
-    title: "BÃ i 1: Tá»‡p tin vÃ  thÆ° má»¥c",
-    desc: "Thiáº¿t láº­p cáº¥u trÃºc thÆ° má»¥c há»c táº­p rÃµ rÃ ng, quy táº¯c Ä‘áº·t tÃªn tá»‡p nháº¥t quÃ¡n vÃ  cÃ¡ch lÆ°u trá»¯ minh chá»©ng khoa há»c.",
-    subdesc:
-      "Má»¥c tiÃªu lÃ  hÃ¬nh thÃ nh thÃ³i quen quáº£n lÃ½ dá»¯ liá»‡u cÃ¡ nhÃ¢n, giáº£m tháº¥t láº¡c tÃ i liá»‡u vÃ  giÃºp viá»‡c ná»™p bÃ i, tra cá»©u, cáº­p nháº­t sáº£n pháº©m há»c táº­p trá»Ÿ nÃªn chá»§ Ä‘á»™ng hÆ¡n.",
+    title: "Bài 1: Tệp tin và thư mục",
+    desc: "Thiết lập cấu trúc thư mục học tập rõ ràng, quy tắc đặt tên tệp nhất quán và cách lưu trữ minh chứng khoa học.",
+    goal:
+      "Hình thành thói quen quản lý dữ liệu cá nhân có tổ chức, giảm thất lạc tài liệu và giúp việc nộp bài, tra cứu, cập nhật sản phẩm học tập trở nên chủ động hơn.",
+    process: [
+      "Khảo sát các loại tài liệu cần lưu trữ trong học phần.",
+      "Tạo thư mục theo bài học, loại sản phẩm và mốc thời gian.",
+      "Đặt tên tệp có ngày tháng, tên bài, phiên bản và trạng thái hoàn thành.",
+      "Chụp lại cấu trúc thư mục để làm minh chứng.",
+    ],
+    result:
+      "Sản phẩm cuối cùng là một hệ thống thư mục rõ ràng, hỗ trợ lưu trữ bài giảng, bài tập, ảnh minh chứng và tài liệu tham khảo. Cách tổ chức này giúp quá trình học tập trở nên chuyên nghiệp hơn.",
+    skills: ["Quản lý tệp", "Đặt tên tài liệu", "Lưu trữ minh chứng", "Tổ chức dữ liệu cá nhân"],
+    evidence: "[Thêm ảnh chụp cấu trúc thư mục, file PDF hoặc đường link minh chứng tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project1.mp4"),
     logo: asset("/assets/project-logo1.png"),
@@ -109,10 +119,20 @@ export const myProjects = [
     tags: portfolioTags,
   },
   {
-    title: "BÃ i 2: TÃ¬m kiáº¿m há»c thuáº­t",
-    desc: "TrÃ¬nh bÃ y quÃ¡ trÃ¬nh xÃ¡c Ä‘á»‹nh chá»§ Ä‘á», chá»n tá»« khÃ³a, tÃ¬m tÃ i liá»‡u vÃ  Ä‘Ã¡nh giÃ¡ Ä‘á»™ tin cáº­y cá»§a nguá»“n thÃ´ng tin há»c thuáº­t.",
-    subdesc:
-      "Sáº£n pháº©m táº­p trung vÃ o kháº£ nÄƒng phÃ¢n biá»‡t dá»¯ liá»‡u, thÃ´ng tin, tri thá»©c vÃ  sá»­ dá»¥ng nguá»“n tÃ i liá»‡u Ä‘Ãºng cÃ¡ch trong mÃ´i trÆ°á»ng sá»‘.",
+    title: "Bài 2: Tìm kiếm học thuật",
+    desc: "Trình bày quá trình xác định chủ đề, chọn từ khóa, tìm tài liệu và đánh giá độ tin cậy của nguồn thông tin học thuật.",
+    goal:
+      "Rèn luyện khả năng phân biệt dữ liệu, thông tin và tri thức; biết khai thác nguồn tài liệu số đúng cách và có trách nhiệm.",
+    process: [
+      "Xác định chủ đề cần tìm kiếm và phạm vi thông tin.",
+      "Thiết kế bộ từ khóa chính, từ khóa phụ và cụm từ tìm kiếm nâng cao.",
+      "Tìm tài liệu từ Google Scholar, thư viện số hoặc trang chính thống.",
+      "Đánh giá tác giả, thời gian xuất bản, mục đích nội dung và mức độ tin cậy.",
+    ],
+    result:
+      "Bài tập tạo ra bảng tổng hợp nguồn tài liệu đáng tin cậy, kèm nhận xét về mức độ phù hợp. Tôi hiểu rõ hơn cách dùng thông tin học thuật để hỗ trợ lập luận thay vì chỉ sao chép nội dung.",
+    skills: ["Tìm kiếm nâng cao", "Đánh giá nguồn", "Trích dẫn", "Tư duy phản biện"],
+    evidence: "[Thêm bảng đánh giá nguồn, ảnh chụp kết quả tìm kiếm hoặc link tài liệu tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project2.mp4"),
     logo: asset("/assets/project-logo2.png"),
@@ -125,10 +145,20 @@ export const myProjects = [
     tags: portfolioTags,
   },
   {
-    title: "BÃ i 3: Viáº¿t prompt hiá»‡u quáº£",
-    desc: "So sÃ¡nh prompt ban Ä‘áº§u vÃ  prompt cáº£i tiáº¿n Ä‘á»ƒ tháº¥y cÃ¡ch ngá»¯ cáº£nh, Ä‘á»‹nh dáº¡ng Ä‘áº§u ra vÃ  tiÃªu chÃ­ Ä‘Ã¡nh giÃ¡ áº£nh hÆ°á»Ÿng Ä‘áº¿n káº¿t quáº£ AI.",
-    subdesc:
-      "BÃ i táº­p giÃºp tÃ´i sá»­ dá»¥ng AI nhÆ° má»™t trá»£ lÃ½ há»c táº­p cÃ³ kiá»ƒm soÃ¡t, biáº¿t Ä‘áº·t cÃ¢u há»i cá»¥ thá»ƒ vÃ  kiá»ƒm tra láº¡i pháº£n há»“i thay vÃ¬ sao chÃ©p thá»¥ Ä‘á»™ng.",
+    title: "Bài 3: Viết prompt hiệu quả",
+    desc: "So sánh prompt ban đầu và prompt cải tiến để thấy cách ngữ cảnh, định dạng đầu ra và tiêu chí đánh giá ảnh hưởng đến kết quả AI.",
+    goal:
+      "Sử dụng AI như một trợ lý học tập có kiểm soát, biết đặt câu hỏi cụ thể, kiểm tra lại phản hồi và cải thiện chất lượng đầu ra.",
+    process: [
+      "Viết prompt ban đầu cho một nhiệm vụ học tập cụ thể.",
+      "Phân tích điểm thiếu: mục tiêu, ngữ cảnh, vai trò, định dạng và tiêu chí.",
+      "Cải tiến prompt bằng cách bổ sung yêu cầu rõ ràng và ví dụ đầu ra.",
+      "So sánh hai kết quả để rút ra nguyên tắc viết prompt tốt hơn.",
+    ],
+    result:
+      "Prompt cải tiến cho kết quả có cấu trúc hơn, sát yêu cầu hơn và dễ kiểm chứng hơn. Bài tập giúp tôi hiểu rằng chất lượng câu hỏi quyết định nhiều đến chất lượng câu trả lời của AI.",
+    skills: ["Prompt engineering", "Đánh giá phản hồi AI", "Tư duy yêu cầu", "Biên tập nội dung"],
+    evidence: "[Thêm prompt trước/sau, ảnh chụp kết quả AI hoặc file phân tích tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project3.mp4"),
     logo: asset("/assets/project-logo3.png"),
@@ -141,10 +171,20 @@ export const myProjects = [
     tags: portfolioTags,
   },
   {
-    title: "BÃ i 4: Há»£p tÃ¡c trá»±c tuyáº¿n",
-    desc: "Minh chá»©ng viá»‡c dÃ¹ng cÃ´ng cá»¥ quáº£n lÃ½ dá»± Ã¡n vÃ  giao tiáº¿p trá»±c tuyáº¿n Ä‘á»ƒ phÃ¢n cÃ´ng, theo dÃµi tiáº¿n Ä‘á»™ vÃ  phá»‘i há»£p nhÃ³m.",
-    subdesc:
-      "Tá»« hoáº¡t Ä‘á»™ng nÃ y, tÃ´i hiá»ƒu rÃµ hÆ¡n vai trÃ² cá»§a lá»‹ch lÃ m viá»‡c, pháº£n há»“i Ä‘Ãºng thá»i Ä‘iá»ƒm vÃ  trÃ¡ch nhiá»‡m cÃ¡ nhÃ¢n khi lÃ m viá»‡c trong mÃ´i trÆ°á»ng sá»‘.",
+    title: "Bài 4: Hợp tác trực tuyến",
+    desc: "Minh chứng việc dùng công cụ quản lý dự án và giao tiếp trực tuyến để phân công, theo dõi tiến độ và phối hợp nhóm.",
+    goal:
+      "Hiểu vai trò của giao tiếp số, phân công rõ ràng và quản lý tiến độ khi làm việc nhóm trong môi trường trực tuyến.",
+    process: [
+      "Xác định nhiệm vụ chung và chia nhỏ thành các đầu việc cụ thể.",
+      "Thiết lập bảng Trello hoặc công cụ tương đương để quản lý tiến độ.",
+      "Phân công người phụ trách, hạn hoàn thành và trạng thái từng việc.",
+      "Ghi nhận trao đổi nhóm, phản hồi và kết quả phối hợp.",
+    ],
+    result:
+      "Nhóm có không gian làm việc rõ ràng hơn, biết theo dõi tiến độ và giảm bỏ sót nhiệm vụ. Cá nhân tôi rèn được kỹ năng giao tiếp, phản hồi đúng lúc và có trách nhiệm với phần việc được giao.",
+    skills: ["Trello", "Làm việc nhóm", "Giao tiếp trực tuyến", "Quản lý tiến độ"],
+    evidence: "[Thêm ảnh bảng Trello, biên bản họp nhóm hoặc link minh chứng tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project4.mp4"),
     logo: asset("/assets/project-logo4.png"),
@@ -157,10 +197,20 @@ export const myProjects = [
     tags: portfolioTags,
   },
   {
-    title: "BÃ i 5: AI táº¡o sinh",
-    desc: "á»¨ng dá»¥ng AI Ä‘á»ƒ há»— trá»£ sÃ¡ng táº¡o ná»™i dung sá»‘ nhÆ° Ã½ tÆ°á»Ÿng, dÃ n Ã½, slide, infographic, bÃ i viáº¿t hoáº·c video ngáº¯n.",
-    subdesc:
-      "Sáº£n pháº©m nháº¥n máº¡nh vai trÃ² biÃªn táº­p cá»§a ngÆ°á»i há»c: dÃ¹ng AI Ä‘á»ƒ tÄƒng tá»‘c phÃ¡c tháº£o, sau Ä‘Ã³ kiá»ƒm tra, chá»‰nh sá»­a vÃ  hoÃ n thiá»‡n báº±ng tÆ° duy cÃ¡ nhÃ¢n.",
+    title: "Bài 5: AI tạo sinh",
+    desc: "Ứng dụng AI để hỗ trợ sáng tạo nội dung số như ý tưởng, dàn ý, slide, infographic, bài viết hoặc video ngắn.",
+    goal:
+      "Biết dùng AI tạo sinh như công cụ hỗ trợ phác thảo và tăng tốc sáng tạo, đồng thời vẫn giữ vai trò biên tập, kiểm chứng và hoàn thiện của người học.",
+    process: [
+      "Chọn một chủ đề nội dung số phù hợp với học tập.",
+      "Dùng AI để gợi ý ý tưởng, cấu trúc và thông điệp chính.",
+      "Thiết kế sản phẩm bằng Canva, CapCut hoặc công cụ tương đương.",
+      "Rà soát tính chính xác, ngôn ngữ, hình ảnh và nguồn tham khảo.",
+    ],
+    result:
+      "Sản phẩm nội dung số hoàn thiện hơn về bố cục và cách trình bày. Tôi học được cách kết hợp AI với công cụ thiết kế để làm sản phẩm nhanh hơn nhưng vẫn cần tư duy cá nhân để chỉnh sửa.",
+    skills: ["AI tạo sinh", "Canva", "CapCut", "Thiết kế nội dung", "Biên tập"],
+    evidence: "[Thêm infographic, slide, video hoặc đường link sản phẩm tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project5.mp4"),
     logo: asset("/assets/project-logo5.png"),
@@ -173,10 +223,20 @@ export const myProjects = [
     tags: portfolioTags,
   },
   {
-    title: "BÃ i 6: AI cÃ³ trÃ¡ch nhiá»‡m",
-    desc: "PhÃ¢n tÃ­ch nguyÃªn táº¯c sá»­ dá»¥ng AI an toÃ n, minh báº¡ch, trÃ¡nh Ä‘áº¡o vÄƒn, báº£o vá»‡ dá»¯ liá»‡u cÃ¡ nhÃ¢n vÃ  kiá»ƒm chá»©ng thÃ´ng tin.",
-    subdesc:
-      "BÃ i táº­p giÃºp tÃ´i xÃ¢y dá»±ng bá»™ nguyÃªn táº¯c cÃ¡ nhÃ¢n khi dÃ¹ng AI trong há»c táº­p vÃ  nghiÃªn cá»©u, Ä‘áº·c biá»‡t vá»›i trÃ­ch dáº«n nguá»“n vÃ  liÃªm chÃ­nh há»c thuáº­t.",
+    title: "Bài 6: AI có trách nhiệm",
+    desc: "Phân tích nguyên tắc sử dụng AI an toàn, minh bạch, tránh đạo văn, bảo vệ dữ liệu cá nhân và kiểm chứng thông tin.",
+    goal:
+      "Xây dựng bộ nguyên tắc cá nhân khi dùng AI trong học tập và nghiên cứu, đặc biệt với trích dẫn nguồn, bảo mật dữ liệu và liêm chính học thuật.",
+    process: [
+      "Tìm hiểu các rủi ro khi dùng AI: sai thông tin, lộ dữ liệu, đạo văn và phụ thuộc công cụ.",
+      "Phân tích một tình huống sử dụng AI trong học tập.",
+      "Đề xuất cách dùng AI minh bạch, có kiểm chứng và có ghi nhận hỗ trợ.",
+      "Viết cam kết cá nhân về an toàn và liêm chính học thuật.",
+    ],
+    result:
+      "Bài tập giúp tôi có thái độ cẩn trọng hơn khi dùng AI. Tôi hiểu rằng AI có thể hỗ trợ tốt, nhưng người học vẫn phải chịu trách nhiệm về nội dung cuối cùng.",
+    skills: ["Liêm chính học thuật", "Bảo mật dữ liệu", "Kiểm chứng thông tin", "Đạo đức AI"],
+    evidence: "[Thêm bài phân tích, checklist nguyên tắc hoặc tài liệu minh chứng tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project1.mp4"),
     logo: asset("/assets/project-logo1.png"),
@@ -189,10 +249,20 @@ export const myProjects = [
     tags: portfolioTags,
   },
   {
-    title: "BÃ i 7A: Trá»£ lÃ½ nghiÃªn cá»©u AI",
-    desc: "Sá»­ dá»¥ng AI Ä‘á»ƒ há»— trá»£ Ä‘á»c hiá»ƒu, tÃ³m táº¯t, Ä‘áº·t cÃ¢u há»i vÃ  phÃ¢n tÃ­ch tÃ i liá»‡u thuá»™c khoa há»c tá»± nhiÃªn, ká»¹ thuáº­t hoáº·c cÃ´ng nghá»‡.",
-    subdesc:
-      "Sáº£n pháº©m cho tháº¥y cÃ¡ch dÃ¹ng AI nhÆ° trá»£ lÃ½ nghiÃªn cá»©u, Ä‘á»“ng thá»i váº«n Ä‘á»‘i chiáº¿u vá»›i tÃ i liá»‡u gá»‘c Ä‘á»ƒ trÃ¡nh hiá»ƒu sai hoáº·c trÃ­ch dáº«n thiáº¿u chÃ­nh xÃ¡c.",
+    title: "Bài 7A: Trợ lý nghiên cứu AI",
+    desc: "Sử dụng AI để hỗ trợ đọc hiểu, tóm tắt, đặt câu hỏi và phân tích tài liệu thuộc khoa học tự nhiên, kỹ thuật hoặc công nghệ.",
+    goal:
+      "Ứng dụng AI như trợ lý nghiên cứu để khai thác tài liệu chuyên môn nhanh hơn nhưng vẫn biết đối chiếu với tài liệu gốc và đánh giá độ tin cậy.",
+    process: [
+      "Chọn một tài liệu khoa học, kỹ thuật hoặc công nghệ phù hợp.",
+      "Dùng AI để tóm tắt ý chính, thuật ngữ quan trọng và câu hỏi nghiên cứu.",
+      "Đối chiếu phản hồi AI với tài liệu gốc để phát hiện điểm thiếu hoặc sai.",
+      "Tổng hợp kết quả thành phần trình bày có trích dẫn và nhận xét cá nhân.",
+    ],
+    result:
+      "Sản phẩm cho thấy AI giúp tăng tốc đọc hiểu và gợi ý hướng phân tích, nhưng người học vẫn cần kiểm chứng, chọn lọc và diễn giải lại bằng hiểu biết của mình.",
+    skills: ["Trợ lý nghiên cứu", "Tóm tắt tài liệu", "Đối chiếu nguồn", "Phân tích khoa học"],
+    evidence: "[Thêm tài liệu gốc, bản tóm tắt AI, ghi chú đối chiếu hoặc link minh chứng tại đây]",
     href: "#projects",
     texture: asset("/textures/project/project2.mp4"),
     logo: asset("/assets/project-logo2.png"),
@@ -209,31 +279,31 @@ export const myProjects = [
 export const workExperiences = [
   {
     id: 1,
-    name: "Há»c váº¥n",
-    pos: "[Äiá»n trÆ°á»ng] - [Äiá»n ngÃ nh/lá»›p]",
+    name: "Học vấn",
+    pos: "[Điền trường] - [Điền ngành/lớp]",
     duration: "2026",
     title:
-      "Sinh viÃªn Ä‘ang xÃ¢y dá»±ng ná»n táº£ng ká»¹ nÄƒng sá»‘ thÃ´ng qua há»c pháº§n Nháº­p mÃ´n CÃ´ng nghá»‡ sá»‘ vÃ  á»¨ng dá»¥ng TrÃ­ tuá»‡ nhÃ¢n táº¡o. Má»¥c tiÃªu lÃ  há»c táº­p cÃ³ tá»• chá»©c, biáº¿t khai thÃ¡c cÃ´ng cá»¥ sá»‘ vÃ  trÃ¬nh bÃ y sáº£n pháº©m há»c táº­p chuyÃªn nghiá»‡p.",
+      "Sinh viên đang xây dựng nền tảng kỹ năng số thông qua học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Mục tiêu là học tập có tổ chức, biết khai thác công cụ số và trình bày sản phẩm học tập chuyên nghiệp.",
     icon: asset("/assets/notion.svg"),
     animation: "salute",
   },
   {
     id: 2,
-    name: "Ká»¹ nÄƒng sá»‘",
-    pos: "Quáº£n lÃ½ dá»¯ liá»‡u - tÃ¬m kiáº¿m - há»£p tÃ¡c",
-    duration: "BÃ i 1 - BÃ i 4",
+    name: "Kỹ năng số",
+    pos: "Quản lý dữ liệu - tìm kiếm - hợp tác",
+    duration: "Bài 1 - Bài 4",
     title:
-      "Biáº¿t quáº£n lÃ½ tá»‡p tin, tÃ¬m kiáº¿m há»c thuáº­t, Ä‘Ã¡nh giÃ¡ nguá»“n tin, lÆ°u trá»¯ trÃªn Google Drive/OneDrive vÃ  phá»‘i há»£p nhÃ³m báº±ng cÃ´ng cá»¥ trá»±c tuyáº¿n nhÆ° Trello hoáº·c ná»n táº£ng tÆ°Æ¡ng Ä‘Æ°Æ¡ng.",
+      "Biết quản lý tệp tin, tìm kiếm học thuật, đánh giá nguồn tin, lưu trữ trên Google Drive/OneDrive và phối hợp nhóm bằng công cụ trực tuyến như Trello hoặc nền tảng tương đương.",
     icon: asset("/assets/figma.svg"),
     animation: "clapping",
   },
   {
     id: 3,
-    name: "á»¨ng dá»¥ng AI",
-    pos: "Prompt - sÃ¡ng táº¡o ná»™i dung - trÃ¡ch nhiá»‡m",
-    duration: "BÃ i 3 - BÃ i 7A",
+    name: "Ứng dụng AI",
+    pos: "Prompt - sáng tạo nội dung - trách nhiệm",
+    duration: "Bài 3 - Bài 7A",
     title:
-      "Biáº¿t viáº¿t prompt, dÃ¹ng AI Ä‘á»ƒ há»— trá»£ há»c táº­p vÃ  sÃ¡ng táº¡o ná»™i dung, kiá»ƒm chá»©ng pháº£n há»“i, báº£o vá»‡ dá»¯ liá»‡u cÃ¡ nhÃ¢n, trÃ¡nh Ä‘áº¡o vÄƒn vÃ  ghi nháº­n nguá»“n há»— trá»£ minh báº¡ch.",
+      "Biết viết prompt, dùng AI để hỗ trợ học tập và sáng tạo nội dung, kiểm chứng phản hồi, bảo vệ dữ liệu cá nhân, tránh đạo văn và ghi nhận nguồn hỗ trợ minh bạch.",
     icon: asset("/assets/framer.svg"),
     animation: "victory",
   },
@@ -248,7 +318,7 @@ export const socialLinks = [
   {
     name: "Email",
     icon: asset("/assets/terminal.png"),
-    url: "mailto:[Äiá»n email]",
+    url: "mailto:[Điền email]",
   },
   {
     name: "Portfolio",
@@ -256,4 +326,3 @@ export const socialLinks = [
     url: "#",
   },
 ] as const;
-

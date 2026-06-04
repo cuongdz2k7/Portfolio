@@ -19,7 +19,7 @@ export const About = () => {
   };
 
   return (
-    <section className="c-space my-20" id="about">
+    <section className="c-space mx-auto my-20 max-w-7xl" id="about">
       <div className="grid h-full grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-6">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -32,9 +32,9 @@ export const About = () => {
             <div>
               <p className="grid-headtext">Xin chào, tôi là [Điền họ tên]</p>
               <p className="grid-subtext">
-                Tôi đang phát triển năng lực công nghệ số, quan tâm đến ứng
-                dụng AI trong học tập, sáng tạo nội dung và quản lý thông tin
-                cá nhân một cách có trách nhiệm.
+                Tôi đang phát triển năng lực công nghệ số, quan tâm đến ứng dụng AI
+                trong học tập, sáng tạo nội dung và quản lý thông tin cá nhân một cách
+                có trách nhiệm.
               </p>
             </div>
           </div>
@@ -51,9 +51,8 @@ export const About = () => {
             <div>
               <p className="grid-headtext">Kỹ năng và công cụ</p>
               <p className="grid-subtext">
-                Quản lý tệp tin, tìm kiếm học thuật, Google Drive/OneDrive,
-                Trello, Canva, CapCut, viết prompt, AI tạo sinh và liêm chính
-                học thuật.
+                Quản lý tệp tin, tìm kiếm học thuật, Google Drive/OneDrive, Trello,
+                Canva, CapCut, viết prompt, AI tạo sinh và liêm chính học thuật.
               </p>
             </div>
           </div>
@@ -87,8 +86,8 @@ export const About = () => {
               </p>
 
               <p className="grid-subtext">
-                Portfolio này được xây dựng như một hồ sơ học tập trực tuyến,
-                có thể tiếp tục cập nhật sau khi kết thúc học phần.
+                Portfolio này được xây dựng như một hồ sơ học tập trực tuyến, có thể
+                tiếp tục cập nhật sau khi kết thúc học phần.
               </p>
 
               <Button href="#projects" containerClass="mt-10 w-full" isBeam>
@@ -109,9 +108,9 @@ export const About = () => {
             <div>
               <p className="grid-headtext">Mục tiêu portfolio</p>
               <p className="grid-subtext">
-                Hệ thống hóa sản phẩm học tập từ Bài 1 đến Bài 7A, thể hiện
-                quá trình rèn luyện kỹ năng số và lưu trữ minh chứng để dễ truy
-                cập, chia sẻ, hoàn thiện.
+                Hệ thống hóa sản phẩm học tập từ Bài 1 đến Bài 7A, thể hiện quá
+                trình rèn luyện kỹ năng số và lưu trữ minh chứng để dễ truy cập, chia
+                sẻ, hoàn thiện.
               </p>
             </div>
           </div>
