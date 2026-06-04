@@ -53,7 +53,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        <div className="mt-12 grid w-full grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.45fr)_minmax(360px,0.55fr)]">
+        <div className="mt-12 grid w-full grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.55fr)_minmax(340px,0.45fr)]">
           <article className="relative overflow-hidden rounded-2xl border border-white-500/10 bg-black-200/80 p-5 shadow-2xl shadow-black-200 sm:p-8 lg:p-10">
             <div className="absolute right-0 top-0 opacity-80">
               <img
@@ -181,14 +181,14 @@ export const Projects = () => {
             </div>
           </article>
 
-          <aside className="min-h-[420px] overflow-hidden rounded-2xl border border-white-500/10 bg-black-200 xl:min-h-full">
+          <aside className="mx-auto aspect-square w-full max-w-[520px] self-start overflow-hidden rounded-2xl border border-white-500/10 bg-black-200 xl:sticky xl:top-28">
             <Canvas>
               <ambientLight intensity={Math.PI} />
               <directionalLight position={[10, 10, 5]} />
 
               <Center>
                 <Suspense fallback={<CanvasLoader />}>
-                  <group scale={1.75} position={[0, -3.2, 0]} rotation={[0, -0.1, 0]}>
+                  <group scale={0.85} position={[0, -0.95, 0]} rotation={[0, -0.1, 0]}>
                     <DemoComputer texture={currentProject.texture} />
                   </group>
                 </Suspense>

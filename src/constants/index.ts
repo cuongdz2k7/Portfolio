@@ -1,7 +1,7 @@
 import { asset } from "../lib/assets";
 
 export const links = {
-  contactEmail: "[Điền email]",
+  contactEmail: "cuongscp049@gmail.com",
   sourceCode: "#projects",
 };
 
@@ -29,7 +29,7 @@ export const navLinks = [
   {
     id: 5,
     name: "Tổng kết",
-    href: "#reflection",
+    href: "#contact",
   },
 ] as const;
 
@@ -280,10 +280,10 @@ export const workExperiences = [
   {
     id: 1,
     name: "Học vấn",
-    pos: "[Điền trường] - [Điền ngành/lớp]",
+    pos: "VNU-UET - K70I-CS6",
     duration: "2026",
     title:
-      "Sinh viên đang xây dựng nền tảng kỹ năng số thông qua học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Mục tiêu là học tập có tổ chức, biết khai thác công cụ số và trình bày sản phẩm học tập chuyên nghiệp.",
+      "Đinh Tiến Cường là sinh viên VNU-UET, lớp K70I-CS6, đang xây dựng nền tảng kỹ năng số thông qua lớp học phần UET.A12 - Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Mục tiêu là học tập có tổ chức, biết khai thác công cụ số và trình bày sản phẩm học tập chuyên nghiệp.",
     icon: asset("/assets/notion.svg"),
     animation: "salute",
   },
@@ -318,7 +318,7 @@ export const socialLinks = [
   {
     name: "Email",
     icon: asset("/assets/terminal.png"),
-    url: "mailto:[Điền email]",
+    url: "mailto:cuongscp049@gmail.com",
   },
   {
     name: "Portfolio",

@@ -30,11 +30,11 @@ export const About = () => {
             />
 
             <div>
-              <p className="grid-headtext">Xin chào, tôi là [Điền họ tên]</p>
+              <p className="grid-headtext">Xin chào, tôi là Đinh Tiến Cường</p>
               <p className="grid-subtext">
-                Tôi đang phát triển năng lực công nghệ số, quan tâm đến ứng dụng AI
-                trong học tập, sáng tạo nội dung và quản lý thông tin cá nhân một cách
-                có trách nhiệm.
+                Tôi là sinh viên VNU-UET, lớp K70I-CS6, đang học học phần UET.A12.
+                Tôi quan tâm đến ứng dụng AI trong học tập, sáng tạo nội dung và quản
+                lý thông tin cá nhân một cách có trách nhiệm.
               </p>
             </div>
           </div>

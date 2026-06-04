@@ -26,14 +26,14 @@ export const Hero = () => {
 
       <div className="c-space relative z-20 mx-auto mt-20 flex w-full max-w-7xl flex-col gap-4 sm:mt-36">
         <p className="text-center font-generalsans text-xl font-medium text-white sm:text-3xl">
-          [Điền họ tên]
+          Đinh Tiến Cường
         </p>
 
         <p className="hero_tag text-gray_gradient">Digital Portfolio</p>
 
         <p className="mx-auto max-w-3xl text-center text-base leading-8 text-white-600 sm:text-xl">
           Hồ sơ học tập cá nhân cho học phần Nhập môn Công nghệ số và Ứng dụng Trí
-          tuệ nhân tạo. Portfolio này tổng hợp CV, kỹ năng số, sản phẩm học tập và
+          tuệ nhân tạo, lớp UET.A12. Portfolio này tổng hợp CV, kỹ năng số, sản phẩm học tập và
           phần tự tổng kết quá trình học.
         </p>
       </div>
