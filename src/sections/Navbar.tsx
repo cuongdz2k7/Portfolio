@@ -28,7 +28,7 @@ export const Navbar = () => {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
-      <div className="mx-auto max-w-[1400px]">
+      <div className="mx-auto max-w-[1200px]">
         <div className="c-space mx-auto flex items-center justify-between py-5">
           <a
             href="#"

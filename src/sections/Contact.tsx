@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 export const Contact = () => {
   return (
     <section className="c-space my-20" id="contact">
-      <div className="mx-auto w-full max-w-6xl rounded-3xl border border-white-500/10 bg-[#0c0c0e]/95 backdrop-blur-md overflow-hidden shadow-2xl relative flex flex-col">
+      <div className="mx-auto w-full max-w-[1100px] rounded-3xl border border-white-500/10 bg-[#0c0c0e]/95 backdrop-blur-md overflow-hidden shadow-2xl relative flex flex-col">
         {/* Background Terminal texture */}
         <img
           src={asset("/assets/terminal.png")}
@@ -26,7 +26,7 @@ export const Contact = () => {
         </div>
 
         {/* macOS Window Body (Content) */}
-        <div className="relative z-10 p-6 sm:p-10 flex flex-col justify-center">
+        <div className="relative z-10 p-6 sm:p-8 flex flex-col justify-center">
           <h3 className="head-text text-center mx-auto">Thông tin nộp bài</h3>
 
           <p className="mt-3 max-w-3xl mx-auto text-center text-base sm:text-lg leading-8 text-white-600">
@@ -35,7 +35,7 @@ export const Contact = () => {
           </p>
 
           {/* Grid of 3 info panels */}
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
             <InfoPanel title="Thông tin cá nhân">
               <InfoRow label="Họ tên" value="Đinh Tiến Cường" />
               <InfoRow label="Email" value={links.contactEmail} />
@@ -56,18 +56,18 @@ export const Contact = () => {
           </div>
 
           {/* Section: Nhìn lại quá trình - Tổng kết học phần */}
-          <div className="mt-10 rounded-xl border border-white-500/10 bg-black-300/80 p-6">
+          <div className="mt-8 rounded-xl border border-white-500/10 bg-black-300/80 p-5">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-green-400 font-mono">Nhìn lại quá trình</h4>
             <h3 className="text-2xl font-bold text-white mt-1">Tổng kết học phần</h3>
-            <p className="mt-4 text-base sm:text-lg leading-8 text-white-600">
+            <p className="mt-3 text-base sm:text-lg leading-8 text-white-600">
               Sau quá trình học tập, tôi hiểu rõ hơn rằng năng lực số không chỉ là biết dùng công cụ, mà còn là biết tổ chức thông tin, giao tiếp có trách nhiệm và ứng dụng AI một cách có kiểm soát.
             </p>
           </div>
 
           {/* Section: Kỹ năng đạt được */}
-          <div className="mt-10">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Kỹ năng đạt được</h3>
-            <div className="grid gap-5 md:grid-cols-2">
+          <div className="mt-8">
+            <h3 className="text-2xl font-bold text-white mb-5 text-center">Kỹ năng đạt được</h3>
+            <div className="grid gap-4 md:grid-cols-2">
               <SkillCard
                 category="Tư duy tổ chức"
                 title="Tư duy tổ chức và xử lý thông tin"
@@ -92,10 +92,10 @@ export const Contact = () => {
           </div>
 
           {/* Section: Rubric tự đánh giá */}
-          <div className="mt-12 rounded-xl border border-white-500/10 bg-[#16161a]/60 p-6 sm:p-8">
+          <div className="mt-10 rounded-xl border border-white-500/10 bg-[#16161a]/60 p-5 sm:p-6">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-[#FFBD2E] font-mono text-center">Rubric tự đánh giá</h4>
-            <h3 className="text-2xl font-bold text-white mt-1 text-center mb-8">Định hướng hoàn thiện portfolio</h3>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <h3 className="text-2xl font-bold text-white mt-1 text-center mb-6">Định hướng hoàn thiện portfolio</h3>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <RubricCard
                 title="Xuất sắc"
                 desc="Portfolio có thiết kế chuyên nghiệp, đầy đủ minh chứng, trình bày rõ tư duy và thể hiện khả năng ứng dụng công nghệ số vượt yêu cầu."
@@ -123,7 +123,7 @@ export const Contact = () => {
             </div>
           </div>
 
-          <Button href="#projects" containerClass="mt-12 w-full md:max-w-md mx-auto" isBeam>
+          <Button href="#projects" containerClass="mt-10 w-full md:max-w-md mx-auto" isBeam>
             Quay lại dự án
           </Button>
         </div>
@@ -138,8 +138,8 @@ interface InfoPanelProps {
 }
 
 const InfoPanel = ({ children, title }: InfoPanelProps) => (
-  <section className="rounded-xl border border-white-500/10 bg-black-300/80 p-5">
-    <h4 className="mb-4 text-lg font-bold text-white">{title}</h4>
+  <section className="rounded-xl border border-white-500/10 bg-black-300/80 p-4 sm:p-5">
+    <h4 className="mb-3 text-lg font-bold text-white">{title}</h4>
     <div className="grid gap-3 text-white-600">{children}</div>
   </section>
 );
@@ -150,7 +150,7 @@ interface InfoRowProps {
 }
 
 const InfoRow = ({ label, value }: InfoRowProps) => (
-  <div className="rounded-lg bg-black-200/80 p-4 leading-7">
+  <div className="rounded-lg bg-black-200/80 p-3 sm:p-4 leading-7">
     <strong className="text-white">{label}:</strong> {value}
   </div>
 );
@@ -177,7 +177,7 @@ interface RubricCardProps {
 }
 
 const RubricCard = ({ title, desc, borderClass, textClass }: RubricCardProps) => (
-  <div className={`rounded-xl border p-5 transition-all duration-300 ${borderClass}`}>
+  <div className={`rounded-xl border p-4 sm:p-5 transition-all duration-300 ${borderClass}`}>
     <h4 className={`text-lg font-bold ${textClass} mb-3`}>{title}</h4>
     <p className="text-xs sm:text-sm leading-6 text-white-600">{desc}</p>
   </div>

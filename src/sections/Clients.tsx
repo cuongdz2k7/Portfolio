@@ -3,7 +3,7 @@ import { asset } from "../lib/assets";
 
 export const Clients = () => {
   return (
-    <section className="c-space mx-auto my-20 max-w-[1400px]" id="reflection">
+    <section className="c-space mx-auto my-20 max-w-[1200px]" id="reflection">
       <h3 className="head-text">Tổng kết quá trình học</h3>
 
       <p className="mt-3 max-w-4xl leading-8 text-white-600">

@@ -12,7 +12,7 @@ export const Experience = () => {
   >("idle");
 
   return (
-    <section className="c-space mx-auto my-20 max-w-[1400px]" id="cv">
+    <section className="c-space mx-auto my-20 max-w-[1200px]" id="cv">
       <div className="w-full text-white-600">
         <h3 className="head-text">CV học tập</h3>
         <p className="mt-3 max-w-4xl leading-8">
