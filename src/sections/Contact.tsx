@@ -6,17 +6,31 @@ import type { ReactNode } from "react";
 export const Contact = () => {
   return (
     <section className="c-space my-20" id="contact">
-      <div className="relative flex min-h-screen flex-col items-center justify-center py-16">
+      <div className="mx-auto w-full max-w-5xl rounded-3xl border border-white-500/10 bg-black-200/85 backdrop-blur-md overflow-hidden shadow-2xl relative">
+        {/* Background Terminal texture */}
         <img
           src={asset("/assets/terminal.png")}
           alt="Bảng thông tin nộp bài"
-          className="absolute inset-0 h-full min-h-screen w-full object-cover opacity-90"
+          className="absolute inset-0 h-full w-full object-cover opacity-30 pointer-events-none animate-pulse"
+          style={{ animationDuration: '6s' }}
         />
 
-        <div className="contact-container rounded-2xl border border-black-300 bg-black-200/85 p-6 backdrop-blur-md sm:p-8">
-          <h3 className="head-text">Thông tin nộp bài</h3>
+        {/* macOS Window Header (Title Bar) */}
+        <div className="relative z-10 flex items-center justify-between px-4 py-3 bg-[#16161a]/95 border-b border-white-500/10">
+          <div className="flex gap-2">
+            <span className="w-3 h-3 rounded-full bg-[#FF5F56] shadow-[0_0_8px_rgba(255,95,86,0.5)]" />
+            <span className="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-[0_0_8px_rgba(255,189,46,0.5)]" />
+            <span className="w-3 h-3 rounded-full bg-[#27C93F] shadow-[0_0_8px_rgba(39,201,63,0.5)]" />
+          </div>
+          <div className="text-xs sm:text-sm font-semibold text-neutral-400 font-mono">macOS - bash</div>
+          <div className="w-12"></div> {/* Spacing to center title */}
+        </div>
 
-          <p className="mt-3 max-w-3xl text-lg leading-8 text-white-600">
+        {/* macOS Window Body (Content) */}
+        <div className="relative z-10 p-6 sm:p-10 flex flex-col justify-center">
+          <h3 className="head-text text-center mx-auto">Thông tin nộp bài</h3>
+
+          <p className="mt-3 max-w-3xl mx-auto text-center text-base sm:text-lg leading-8 text-white-600">
             Portfolio này là sản phẩm tổng hợp cho bài tập dự án cá nhân, trình bày
             thông tin cá nhân, học phần, minh chứng và phần tổng kết quá trình học.
           </p>
@@ -49,20 +63,23 @@ export const Contact = () => {
             </InfoPanel>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {clientReviews.map(({ id, name, position, review }) => (
-              <div
-                key={id}
-                className="rounded-xl border border-white-500/10 bg-black-300/80 p-4"
-              >
-                <p className="font-semibold text-white">{name}</p>
-                <p className="mt-1 text-sm text-white-600">{position}</p>
-                <p className="mt-4 text-sm leading-7 text-white-600">{review}</p>
-              </div>
-            ))}
+          <div className="mt-10">
+            <h4 className="text-xl font-bold text-white mb-6 text-center">Đánh giá & Kỹ năng số đạt được</h4>
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {clientReviews.map(({ id, name, position, review }) => (
+                <div
+                  key={id}
+                  className="rounded-xl border border-white-500/10 bg-black-300/80 p-4 transition-all duration-300 hover:border-white-500/20"
+                >
+                  <p className="font-semibold text-white">{name}</p>
+                  <p className="mt-1 text-sm text-white-600">{position}</p>
+                  <p className="mt-4 text-sm leading-7 text-white-600">{review}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <Button href="#projects" containerClass="mt-10 w-full" isBeam>
+          <Button href="#projects" containerClass="mt-10 w-full md:max-w-md mx-auto" isBeam>
             Quay lại dự án
           </Button>
         </div>
