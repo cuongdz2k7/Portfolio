@@ -21,8 +21,10 @@ export const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
-    <section className="relative flex min-h-screen w-full flex-col">
-      <div className="c-space mx-auto mt-20 flex w-full flex-col gap-4 sm:mt-36">
+    <section className="relative flex min-h-screen w-full flex-col overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,#1f2a55_0%,#050816_42%,#010103_100%)]" />
+
+      <div className="c-space relative z-20 mx-auto mt-20 flex w-full flex-col gap-4 sm:mt-36">
         <p className="text-center font-generalsans text-xl font-medium text-white sm:text-3xl">
           [Điền họ tên]
         </p>
@@ -36,7 +38,7 @@ export const Hero = () => {
         </p>
       </div>
 
-      <div className="absolute inset-0 size-full">
+      <div className="pointer-events-none absolute inset-0 z-0 size-full opacity-70">
         <Canvas className="size-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
@@ -64,7 +66,7 @@ export const Hero = () => {
         </Canvas>
       </div>
 
-      <div className="c-space absolute bottom-7 left-0 right-0 z-10 w-full">
+      <div className="c-space absolute bottom-7 left-0 right-0 z-30 w-full">
         <Button
           isBeam
           containerClass="sm:w-fit w-full sm:min-w-96"

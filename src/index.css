@@ -13,6 +13,18 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+#root:empty::before {
+  content: "Digital Portfolio";
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: radial-gradient(circle at top, #1f2a55 0%, #050816 42%, #010103 100%);
+  font-size: clamp(2rem, 8vw, 5rem);
+  font-weight: 900;
+}
+
 @layer utilities {
   .c-space {
     @apply px-5 sm:px-10;

@@ -27,12 +27,12 @@ export const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 bg-black/90">
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl">
         <div className="c-space mx-auto flex items-center justify-between py-5">
           <a
             href="#"
-            className="text-xl font-bold text-neutral-400 transition-colors hover:text-white"
+            className="text-xl font-bold text-white transition-colors hover:text-white-700"
           >
             Digital Portfolio
           </a>
