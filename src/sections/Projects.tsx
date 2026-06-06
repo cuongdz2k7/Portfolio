@@ -42,8 +42,7 @@ export const Projects = () => {
             <p className="head-text">Dự án học tập</p>
             <p className="mt-4 max-w-5xl text-base leading-8 text-white-600 sm:text-lg">
               Mỗi bài tập được trình bày như một dự án nhỏ với mục tiêu, quy trình, kết quả,
-              kỹ năng rút ra và khu vực minh chứng. Các placeholder có thể thay bằng ảnh chụp,
-              PDF, video hoặc đường link sản phẩm thật khi nộp bài.
+              kỹ năng rút ra và file minh chứng đã nộp cho từng tuần học.
             </p>
           </div>
 
@@ -129,9 +128,21 @@ export const Projects = () => {
                 </InfoBlock>
 
                 <InfoBlock title="Minh chứng">
-                  <p className="rounded-lg border border-dashed border-white-500/25 bg-black-300/70 p-4 text-white-600">
-                    {currentProject.evidence}
-                  </p>
+                  <div className="rounded-lg border border-dashed border-white-500/25 bg-black-300/70 p-4 text-white-600">
+                    <p>{currentProject.evidence}</p>
+                    <a
+                      href={currentProject.evidenceFile}
+                      download
+                      className="mt-4 inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-black-200 transition hover:opacity-85"
+                    >
+                      Tải minh chứng
+                      <img
+                        src={asset("/assets/arrow-up.png")}
+                        alt=""
+                        className="size-3 invert"
+                      />
+                    </a>
+                  </div>
                 </InfoBlock>
               </div>
 

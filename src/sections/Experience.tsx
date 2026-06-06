@@ -16,8 +16,8 @@ export const Experience = () => {
       <div className="w-full text-white-600">
         <h3 className="head-text">CV học tập</h3>
         <p className="mt-3 max-w-4xl leading-8">
-          Tóm tắt học vấn, kỹ năng số và định hướng phát triển cá nhân. Các thông tin riêng
-          như trường, lớp, mã sinh viên, email đang để placeholder để bạn cập nhật sau.
+          Tóm tắt học vấn, kỹ năng số và định hướng phát triển cá nhân của Đinh Tiến Cường,
+          sinh viên VNU-UET lớp K70I-CS6, mã sinh viên 25021659.
         </p>
 
         <div className="work-container">

@@ -86,8 +86,8 @@ export const About = () => {
               </p>
 
               <p className="grid-subtext">
-                Portfolio này được xây dựng như một hồ sơ học tập trực tuyến, có thể
-                tiếp tục cập nhật sau khi kết thúc học phần.
+                Portfolio này được xây dựng như một hồ sơ học tập trực tuyến, giúp
+                lưu lại quá trình rèn luyện kỹ năng số và các sản phẩm đã hoàn thành.
               </p>
 
               <Button href="#projects" containerClass="mt-10 w-full" isBeam>

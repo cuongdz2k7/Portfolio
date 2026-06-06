@@ -39,7 +39,7 @@ export const Contact = () => {
             <InfoPanel title="Thông tin cá nhân">
               <InfoRow label="Họ tên" value="Đinh Tiến Cường" />
               <InfoRow label="Email" value={links.contactEmail} />
-              <InfoRow label="Mã sinh viên" value="[Điền mã sinh viên]" />
+              <InfoRow label="Mã sinh viên" value="25021659" />
             </InfoPanel>
 
             <InfoPanel title="Thông tin học phần">
@@ -50,7 +50,7 @@ export const Contact = () => {
 
             <InfoPanel title="Minh chứng nộp bài">
               <InfoRow label="Website" value="GitHub Pages Portfolio" />
-              <InfoRow label="Minh chứng" value="[Thêm link Google Drive/PDF/video tại đây]" />
+              <InfoRow label="Minh chứng" value="7 gói bài tập tuần 1-7 đã được gắn trong từng dự án" />
               <InfoRow label="Trạng thái" value="Đã hoàn thành" />
             </InfoPanel>
           </div>

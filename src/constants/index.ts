@@ -106,8 +106,9 @@ export const myProjects = [
     result:
       "Sản phẩm cuối cùng là một hệ thống thư mục rõ ràng, hỗ trợ lưu trữ bài giảng, bài tập, ảnh minh chứng và tài liệu tham khảo. Cách tổ chức này giúp quá trình học tập trở nên chuyên nghiệp hơn.",
     skills: ["Quản lý tệp", "Đặt tên tài liệu", "Lưu trữ minh chứng", "Tổ chức dữ liệu cá nhân"],
-    evidence: "[Thêm ảnh chụp cấu trúc thư mục, file PDF hoặc đường link minh chứng tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 1 về thao tác cơ bản với tệp tin và thư mục.",
+    evidenceFile: asset("/assets/evidence/tuan-1.zip"),
+    href: asset("/assets/evidence/tuan-1.zip"),
     texture: asset("/textures/project/project1.mp4"),
     logo: asset("/assets/project-logo1.png"),
     logoStyle: {
@@ -132,8 +133,9 @@ export const myProjects = [
     result:
       "Bài tập tạo ra bảng tổng hợp nguồn tài liệu đáng tin cậy, kèm nhận xét về mức độ phù hợp. Tôi hiểu rõ hơn cách dùng thông tin học thuật để hỗ trợ lập luận thay vì chỉ sao chép nội dung.",
     skills: ["Tìm kiếm nâng cao", "Đánh giá nguồn", "Trích dẫn", "Tư duy phản biện"],
-    evidence: "[Thêm bảng đánh giá nguồn, ảnh chụp kết quả tìm kiếm hoặc link tài liệu tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 2 về tìm kiếm và đánh giá thông tin học thuật.",
+    evidenceFile: asset("/assets/evidence/tuan-2.zip"),
+    href: asset("/assets/evidence/tuan-2.zip"),
     texture: asset("/textures/project/project2.mp4"),
     logo: asset("/assets/project-logo2.png"),
     logoStyle: {
@@ -158,8 +160,9 @@ export const myProjects = [
     result:
       "Prompt cải tiến cho kết quả có cấu trúc hơn, sát yêu cầu hơn và dễ kiểm chứng hơn. Bài tập giúp tôi hiểu rằng chất lượng câu hỏi quyết định nhiều đến chất lượng câu trả lời của AI.",
     skills: ["Prompt engineering", "Đánh giá phản hồi AI", "Tư duy yêu cầu", "Biên tập nội dung"],
-    evidence: "[Thêm prompt trước/sau, ảnh chụp kết quả AI hoặc file phân tích tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 3 về viết prompt hiệu quả cho học tập.",
+    evidenceFile: asset("/assets/evidence/tuan-3.zip"),
+    href: asset("/assets/evidence/tuan-3.zip"),
     texture: asset("/textures/project/project3.mp4"),
     logo: asset("/assets/project-logo3.png"),
     logoStyle: {
@@ -184,8 +187,9 @@ export const myProjects = [
     result:
       "Nhóm có không gian làm việc rõ ràng hơn, biết theo dõi tiến độ và giảm bỏ sót nhiệm vụ. Cá nhân tôi rèn được kỹ năng giao tiếp, phản hồi đúng lúc và có trách nhiệm với phần việc được giao.",
     skills: ["Trello", "Làm việc nhóm", "Giao tiếp trực tuyến", "Quản lý tiến độ"],
-    evidence: "[Thêm ảnh bảng Trello, biên bản họp nhóm hoặc link minh chứng tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 4 về giao tiếp và hợp tác trực tuyến.",
+    evidenceFile: asset("/assets/evidence/tuan-4.zip"),
+    href: asset("/assets/evidence/tuan-4.zip"),
     texture: asset("/textures/project/project4.mp4"),
     logo: asset("/assets/project-logo4.png"),
     logoStyle: {
@@ -210,8 +214,9 @@ export const myProjects = [
     result:
       "Sản phẩm nội dung số hoàn thiện hơn về bố cục và cách trình bày. Tôi học được cách kết hợp AI với công cụ thiết kế để làm sản phẩm nhanh hơn nhưng vẫn cần tư duy cá nhân để chỉnh sửa.",
     skills: ["AI tạo sinh", "Canva", "CapCut", "Thiết kế nội dung", "Biên tập"],
-    evidence: "[Thêm infographic, slide, video hoặc đường link sản phẩm tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 5 về sáng tạo nội dung số với công cụ AI.",
+    evidenceFile: asset("/assets/evidence/tuan-5.zip"),
+    href: asset("/assets/evidence/tuan-5.zip"),
     texture: asset("/textures/project/project5.mp4"),
     logo: asset("/assets/project-logo5.png"),
     logoStyle: {
@@ -236,8 +241,9 @@ export const myProjects = [
     result:
       "Bài tập giúp tôi có thái độ cẩn trọng hơn khi dùng AI. Tôi hiểu rằng AI có thể hỗ trợ tốt, nhưng người học vẫn phải chịu trách nhiệm về nội dung cuối cùng.",
     skills: ["Liêm chính học thuật", "Bảo mật dữ liệu", "Kiểm chứng thông tin", "Đạo đức AI"],
-    evidence: "[Thêm bài phân tích, checklist nguyên tắc hoặc tài liệu minh chứng tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 6 về an toàn và sử dụng AI có trách nhiệm.",
+    evidenceFile: asset("/assets/evidence/tuan-6.zip"),
+    href: asset("/assets/evidence/tuan-6.zip"),
     texture: asset("/textures/project/project1.mp4"),
     logo: asset("/assets/project-logo1.png"),
     logoStyle: {
@@ -262,8 +268,9 @@ export const myProjects = [
     result:
       "Sản phẩm cho thấy AI giúp tăng tốc đọc hiểu và gợi ý hướng phân tích, nhưng người học vẫn cần kiểm chứng, chọn lọc và diễn giải lại bằng hiểu biết của mình.",
     skills: ["Trợ lý nghiên cứu", "Tóm tắt tài liệu", "Đối chiếu nguồn", "Phân tích khoa học"],
-    evidence: "[Thêm tài liệu gốc, bản tóm tắt AI, ghi chú đối chiếu hoặc link minh chứng tại đây]",
-    href: "#projects",
+    evidence: "Minh chứng đã nộp: gói bài tập Tuần 7 về phân tích tài liệu với trợ lý nghiên cứu AI.",
+    evidenceFile: asset("/assets/evidence/tuan-7.zip"),
+    href: asset("/assets/evidence/tuan-7.zip"),
     texture: asset("/textures/project/project2.mp4"),
     logo: asset("/assets/project-logo2.png"),
     logoStyle: {
