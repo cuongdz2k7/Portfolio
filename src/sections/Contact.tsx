@@ -1,41 +1,36 @@
 import { Button } from "../components/Button";
 import { links } from "../constants";
-import { asset } from "../lib/assets";
 import type { ReactNode } from "react";
 
 export const Contact = () => {
   return (
-    <section className="c-space my-20" id="contact">
-      <div className="mx-auto w-full max-w-[1100px] rounded-3xl border border-white-500/10 bg-[#0c0c0e]/95 backdrop-blur-md overflow-hidden shadow-2xl relative flex flex-col">
-        {/* Background Terminal texture */}
-        <img
-          src={asset("/assets/terminal.png")}
-          alt="Bảng thông tin nộp bài"
-          className="absolute inset-0 h-full w-full object-cover opacity-15 pointer-events-none"
-        />
+    <section className="c-space my-20 overflow-hidden" id="contact">
+      <div className="relative mx-auto flex w-full max-w-[1100px] flex-col overflow-hidden rounded-[2rem] border border-white-500/10 bg-[#09090b] shadow-[0_28px_90px_rgba(0,0,0,0.55)]">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_8%,rgba(255,255,255,0.14),transparent_22%),radial-gradient(circle_at_88%_0%,rgba(96,165,250,0.13),transparent_26%),linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0)_34%)]" />
 
-        {/* macOS Window Header (Title Bar) */}
-        <div className="relative z-10 flex items-center justify-between px-4 py-3 bg-[#16161a]/95 border-b border-white-500/10 shrink-0">
+        <div className="relative z-10 flex shrink-0 items-center justify-between border-b border-white-500/10 bg-[#19191f]/95 px-4 py-3">
           <div className="flex gap-2">
-            <span className="w-3 h-3 rounded-full bg-[#FF5F56] shadow-[0_0_8px_rgba(255,95,86,0.5)]" />
-            <span className="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-[0_0_8px_rgba(255,189,46,0.5)]" />
-            <span className="w-3 h-3 rounded-full bg-[#27C93F] shadow-[0_0_8px_rgba(39,201,63,0.5)]" />
+            <span className="h-3 w-3 rounded-full bg-[#FF5F56] shadow-[0_0_8px_rgba(255,95,86,0.5)]" />
+            <span className="h-3 w-3 rounded-full bg-[#FFBD2E] shadow-[0_0_8px_rgba(255,189,46,0.5)]" />
+            <span className="h-3 w-3 rounded-full bg-[#27C93F] shadow-[0_0_8px_rgba(39,201,63,0.5)]" />
           </div>
-          <div className="text-xs sm:text-sm font-semibold text-neutral-400 font-mono">macOS - bash</div>
-          <div className="w-12"></div> {/* Spacing to center title */}
+          <div className="font-mono text-xs font-semibold text-neutral-400 sm:text-sm">
+            macOS - bash
+          </div>
+          <div className="w-12" />
         </div>
 
-        {/* macOS Window Body (Content) */}
-        <div className="relative z-10 p-6 sm:p-8 flex flex-col justify-center">
-          <h3 className="head-text text-center mx-auto">Thông tin nộp bài</h3>
+        <div className="relative z-10 flex flex-col justify-center px-5 py-8 sm:px-8 sm:py-10">
+          <div className="mx-auto max-w-3xl rounded-3xl border border-white-500/10 bg-white/[0.045] px-5 py-7 text-center shadow-[0_18px_50px_rgba(0,0,0,0.32)] backdrop-blur-md sm:px-8">
+            <h3 className="head-text mx-auto">Thông tin nộp bài</h3>
 
-          <p className="mt-3 max-w-3xl mx-auto text-center text-base sm:text-lg leading-8 text-white-600">
-            Portfolio này là sản phẩm tổng hợp cho bài tập dự án cá nhân, trình bày
-            thông tin cá nhân, học phần, minh chứng và phần tổng kết quá trình học.
-          </p>
+            <p className="mx-auto mt-3 max-w-2xl text-base leading-8 text-white-600 sm:text-lg">
+              Portfolio này là sản phẩm tổng hợp cho bài tập dự án cá nhân, trình bày
+              thông tin cá nhân, học phần, minh chứng và phần tổng kết quá trình học.
+            </p>
+          </div>
 
-          {/* Grid of 3 info panels */}
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
+          <div className="relative z-20 mx-auto -mt-3 grid w-full max-w-5xl gap-5 md:grid-cols-3">
             <InfoPanel title="Thông tin cá nhân">
               <InfoRow label="Họ tên" value="Đinh Tiến Cường" />
               <InfoRow label="Email" value={links.contactEmail} />
@@ -55,18 +50,18 @@ export const Contact = () => {
             </InfoPanel>
           </div>
 
-          {/* Section: Nhìn lại quá trình - Tổng kết học phần */}
-          <div className="mt-8 rounded-xl border border-white-500/10 bg-black-300/80 p-5">
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-green-400 font-mono">Nhìn lại quá trình</h4>
-            <h3 className="text-2xl font-bold text-white mt-1">Tổng kết học phần</h3>
-            <p className="mt-3 text-base sm:text-lg leading-8 text-white-600">
+          <div className="mx-auto mt-8 w-full max-w-5xl rounded-3xl border border-white-500/10 bg-[#17171d]/90 p-5 shadow-[0_18px_50px_rgba(0,0,0,0.32)] backdrop-blur-md sm:p-6">
+            <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-green-400">
+              Nhìn lại quá trình
+            </h4>
+            <h3 className="mt-1 text-2xl font-bold text-white">Tổng kết học phần</h3>
+            <p className="mt-3 text-base leading-8 text-white-600 sm:text-lg">
               Sau quá trình học tập, tôi hiểu rõ hơn rằng năng lực số không chỉ là biết dùng công cụ, mà còn là biết tổ chức thông tin, giao tiếp có trách nhiệm và ứng dụng AI một cách có kiểm soát.
             </p>
           </div>
 
-          {/* Section: Kỹ năng đạt được */}
-          <div className="mt-8">
-            <h3 className="text-2xl font-bold text-white mb-5 text-center">Kỹ năng đạt được</h3>
+          <div className="mx-auto mt-8 w-full max-w-5xl">
+            <h3 className="mb-5 text-center text-2xl font-bold text-white">Kỹ năng đạt được</h3>
             <div className="grid gap-4 md:grid-cols-2">
               <SkillCard
                 category="Tư duy tổ chức"
@@ -91,10 +86,13 @@ export const Contact = () => {
             </div>
           </div>
 
-          {/* Section: Rubric tự đánh giá */}
-          <div className="mt-10 rounded-xl border border-white-500/10 bg-[#16161a]/60 p-5 sm:p-6">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-[#FFBD2E] font-mono text-center">Rubric tự đánh giá</h4>
-            <h3 className="text-2xl font-bold text-white mt-1 text-center mb-6">Định hướng hoàn thiện portfolio</h3>
+          <div className="mx-auto mt-10 w-full max-w-5xl rounded-3xl border border-white-500/10 bg-[#17171d]/80 p-5 shadow-[0_18px_50px_rgba(0,0,0,0.26)] backdrop-blur-md sm:p-6">
+            <h4 className="text-center font-mono text-sm font-semibold uppercase tracking-wider text-[#FFBD2E]">
+              Rubric tự đánh giá
+            </h4>
+            <h3 className="mb-6 mt-1 text-center text-2xl font-bold text-white">
+              Định hướng hoàn thiện portfolio
+            </h3>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <RubricCard
                 title="Xuất sắc"
@@ -138,7 +136,7 @@ interface InfoPanelProps {
 }
 
 const InfoPanel = ({ children, title }: InfoPanelProps) => (
-  <section className="rounded-xl border border-white-500/10 bg-black-300/80 p-4 sm:p-5">
+  <section className="rounded-3xl border border-white-500/10 bg-[#1b1b21]/95 p-4 shadow-[0_16px_44px_rgba(0,0,0,0.32)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white-500/20 sm:p-5">
     <h4 className="mb-3 text-lg font-bold text-white">{title}</h4>
     <div className="grid gap-3 text-white-600">{children}</div>
   </section>
@@ -150,7 +148,7 @@ interface InfoRowProps {
 }
 
 const InfoRow = ({ label, value }: InfoRowProps) => (
-  <div className="rounded-lg bg-black-200/80 p-3 sm:p-4 leading-7">
+  <div className="rounded-xl bg-[#0d0d10]/95 p-3 leading-7 shadow-inner shadow-black/40 sm:p-4">
     <strong className="text-white">{label}:</strong> {value}
   </div>
 );
@@ -162,10 +160,10 @@ interface SkillCardProps {
 }
 
 const SkillCard = ({ category, title, desc }: SkillCardProps) => (
-  <div className="rounded-xl border border-white-500/10 bg-black-300/80 p-5 transition-all duration-300 hover:border-white-500/20">
-    <span className="text-xs font-semibold uppercase tracking-wider text-green-400 font-mono">{category}</span>
-    <h4 className="text-lg font-bold text-white mt-1 mb-3">{title}</h4>
-    <p className="text-sm sm:text-base leading-7 text-white-600">{desc}</p>
+  <div className="rounded-3xl border border-white-500/10 bg-[#1b1b21]/95 p-5 shadow-[0_16px_44px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white-500/20">
+    <span className="font-mono text-xs font-semibold uppercase tracking-wider text-green-400">{category}</span>
+    <h4 className="mb-3 mt-1 text-lg font-bold text-white">{title}</h4>
+    <p className="text-sm leading-7 text-white-600 sm:text-base">{desc}</p>
   </div>
 );
 
@@ -177,8 +175,8 @@ interface RubricCardProps {
 }
 
 const RubricCard = ({ title, desc, borderClass, textClass }: RubricCardProps) => (
-  <div className={`rounded-xl border p-4 sm:p-5 transition-all duration-300 ${borderClass}`}>
+  <div className={`rounded-3xl border p-4 shadow-[0_14px_34px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1 sm:p-5 ${borderClass}`}>
     <h4 className={`text-lg font-bold ${textClass} mb-3`}>{title}</h4>
-    <p className="text-xs sm:text-sm leading-6 text-white-600">{desc}</p>
+    <p className="text-xs leading-6 text-white-600 sm:text-sm">{desc}</p>
   </div>
 );
